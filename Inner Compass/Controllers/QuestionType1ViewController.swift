@@ -23,7 +23,7 @@ class QuestionType1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         // Set the color of the UITextView to match the UITextFields below
@@ -115,7 +115,6 @@ extension QuestionType1ViewController: UITextFieldDelegate {
         }
         
         return true
-        
     }
     
     
@@ -130,5 +129,4 @@ extension QuestionType1ViewController: UITextFieldDelegate {
 //
 //        return true
 //    }
-    
 }
