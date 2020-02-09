@@ -52,13 +52,14 @@ class QuestionType1ViewController: UIViewController {
     
     @IBAction func submitAnswer(_ sender: UIButton) {
         
-        //When the user clicks the submit answer button, save response, move counter to next question, update form to that question
+        //When the user clicks the submit answer button, save response, move counter to next question, update form to that
+        //question
         questionBrain.saveAnswer()
         questionBrain.nextQuestion()
         
         updateUI()
         
-        // This tells the text fields that we're done editing and dismiss the keyboard
+        //This tells the text fields that we're done editing and dismiss the keyboard
         firstTextField.endEditing(true)
         secondTextField.endEditing(true)
         thirdTextField.endEditing(true)
@@ -79,7 +80,8 @@ class QuestionType1ViewController: UIViewController {
 
 extension QuestionType1ViewController: UITextViewDelegate {
     
-    //when the user begins to edit the text view, if the text view contains a placeholder (i.e. if its text color is light gray) clear the placeholder text and set the text color to black in order to accommodate the user's entry.
+    //when the user begins to edit the text view, if the text view contains a placeholder (i.e. if its text color is light
+    //gray) clear the placeholder text and set the text color to black in order to accommodate the user's entry.
     func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.textColor == UIColor.lightGray {
             textView.text = nil
@@ -87,7 +89,8 @@ extension QuestionType1ViewController: UITextViewDelegate {
         }
     }
     
-    //When the user finishes editing the text view and it's resigned as the first responder, if the text view is empty, reset its placeholder by re-adding the placeholder text and setting its color to light gray.
+    //When the user finishes editing the text view and it's resigned as the first responder, if the text view is empty, reset
+    //its placeholder by re-adding the placeholder text and setting its color to light gray.
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
             textView.text = "Need to brainstorm? Use this field to do so.  Nothing you type here will be submitted as your answer..."
