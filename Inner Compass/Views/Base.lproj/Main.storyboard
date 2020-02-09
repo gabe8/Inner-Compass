@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iPg-ue-NKc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Inner_Compass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="compass-logo" translatesAutoresizingMaskIntoConstraints="NO" id="E40-Yx-bFZ">
+                                <rect key="frame" x="54" y="112" width="301" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m47-dM-ckm">
+                                <rect key="frame" x="57" y="674" width="295" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.30196078431372547" green="0.50196078431372548" blue="0.89411764705882346" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Start Here">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lvu-ov-SQy" kind="show" id="S7H-ve-rNX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inner Compass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ng-lH-bpy">
+                                <rect key="frame" x="63" y="350" width="289" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iH-P6-x7U">
+                                <rect key="frame" x="70" y="412" width="269" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Discover Your Values
+Transform Your Life</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.96470588239999999" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OuN-vQ-ngB"/>
+                    <connections>
+                        <outlet property="startButton" destination="m47-dM-ckm" id="7b7-8F-Hth"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="138"/>
+        </scene>
+        <!--Survey Start View Controller-->
+        <scene sceneID="1Lx-g1-ytK">
+            <objects>
+                <viewController id="lvu-ov-SQy" customClass="SurveyStartViewController" customModule="Inner_Compass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nBi-UA-0c6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What to Know Before Starting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SK9-10-8ht">
+                                <rect key="frame" x="17" y="110" width="380" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="ShC-B0-pjg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="TeH-au-gpS">
+                                <rect key="frame" x="20" y="166" width="374" height="1749"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">This app will enable you to discover and identify your personal values.  Your values are simply things that are important to you in your life, and govern your behavior, decisions, thinking, and how you live your life.  They operate in the background of your inner psychology and for most people are subconscious.  Most of us do not live consistently according to our true values and adopt or prioritize values that aren’t really ours or ones we would like.  These can come from society, our family, inherited belief system, etc.  This can result in indecision, inner conflict, depression, disappointment with life, an ability to achieve goals and more.   Knowing your true authentic values and their order of importance to you, empowers you to make better decisions and live a more fulfilling and happy life with greater self-awareness and integrity.  This app will help you to uncover your true values and give you a powerful piece of self-knowledge that can act as a guiding compass in your life.
+
+To do this, you will take a short survey of 15 questions. In each of these questions you will write down your answers.  You may need time to reflect and brainstorm for the questions so feel free to take your time.  You can exit out and come back to the survey any time.  Once the survey is complete, the app will show you your list of current values, with which you can order them in order of priority and edit them to come to your final list.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2r-YL-XaT">
+                                <rect key="frame" x="59.5" y="2014" width="295" height="52"/>
+                                <color key="backgroundColor" red="0.30196078430000001" green="0.50196078430000002" blue="0.89411764709999997" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="6VC-eQ-pcG"/>
+                                    <constraint firstAttribute="height" constant="52" id="CwZ-Ab-I7G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Begin Survey">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HcM-gQ-XXQ" kind="show" id="5Og-wv-ZTf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TeH-au-gpS" firstAttribute="leading" secondItem="Kw4-f0-8Zv" secondAttribute="leading" constant="20" id="2vu-h1-OtQ"/>
+                            <constraint firstItem="Y2r-YL-XaT" firstAttribute="bottom" secondItem="Kw4-f0-8Zv" secondAttribute="bottom" id="JGb-Mg-zMc"/>
+                            <constraint firstItem="TeH-au-gpS" firstAttribute="top" secondItem="SK9-10-8ht" secondAttribute="bottom" constant="20" id="MvL-02-0zD"/>
+                            <constraint firstItem="Y2r-YL-XaT" firstAttribute="centerX" secondItem="nBi-UA-0c6" secondAttribute="centerX" id="ibh-MQ-uWV"/>
+                            <constraint firstItem="SK9-10-8ht" firstAttribute="leading" secondItem="Kw4-f0-8Zv" secondAttribute="leading" constant="17" id="paM-xy-HWZ"/>
+                            <constraint firstItem="Y2r-YL-XaT" firstAttribute="top" secondItem="TeH-au-gpS" secondAttribute="bottom" constant="99" id="rYw-hZ-rO0"/>
+                            <constraint firstItem="SK9-10-8ht" firstAttribute="top" secondItem="Kw4-f0-8Zv" secondAttribute="top" constant="22" id="zge-8t-L9O"/>
+                            <constraint firstItem="Kw4-f0-8Zv" firstAttribute="trailing" secondItem="TeH-au-gpS" secondAttribute="trailing" constant="39" id="ziK-xq-l69"/>
+                            <constraint firstItem="Kw4-f0-8Zv" firstAttribute="trailing" secondItem="SK9-10-8ht" secondAttribute="trailing" constant="17" id="ziv-7q-F5A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kw4-f0-8Zv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ApU-tX-7Bp"/>
+                    <size key="freeformSize" width="414" height="2100"/>
+                    <connections>
+                        <outlet property="beginSurveyButton" destination="Y2r-YL-XaT" id="Sra-1x-z8f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgJ-Sr-gRo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686.9565217391305" y="137.94642857142856"/>
+        </scene>
+        <!--Question Type1 View Controller-->
+        <scene sceneID="itb-iG-qwf">
+            <objects>
+                <viewController id="HcM-gQ-XXQ" customClass="QuestionType1ViewController" customModule="Inner_Compass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0bg-lc-RBz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3lj-nP-Ne8">
+                                <rect key="frame" x="132" y="107" width="150" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="374" translatesAutoresizingMaskIntoConstraints="NO" id="X25-fq-9Jw">
+                                <rect key="frame" x="20" y="228" width="374" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">What are 2-3 things do you spend your time on the most, every day? You will make time for things that are really important to you and you will run out of time for things that are not.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your first thing..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1U-Vb-ey5">
+                                <rect key="frame" x="30" y="561" width="250" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your second thing..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="se6-iw-RmG">
+                                <rect key="frame" x="30" y="603" width="250" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your third thing..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMq-6n-krM">
+                                <rect key="frame" x="30" y="645" width="250" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lww-Qv-QDY">
+                                <rect key="frame" x="20" y="459" width="374" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Write down your final one to three answers in the fields below using a single word or phrase.  Click the Submit Answer button below to proceed to the next question.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Need to brainstorm? Use this field to do so.  Nothing you type here will be submitted as your answer..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vWk-ip-LBX">
+                                <rect key="frame" x="30" y="323" width="250" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJT-GD-kcK">
+                                <rect key="frame" x="60" y="753" width="295" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.30196078431372547" green="0.50196078431372548" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Submit Answer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitAnswer:" destination="HcM-gQ-XXQ" eventType="touchUpInside" id="PRR-kd-V9z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. What do you spend your time on primarily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob1-KC-NQ8">
+                                <rect key="frame" x="20" y="148" width="374" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1HB-N7-Mde"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YI7-e2-4hW"/>
+                    <connections>
+                        <outlet property="brainstormTextField" destination="vWk-ip-LBX" id="MVI-Ns-W2Y"/>
+                        <outlet property="firstTextField" destination="a1U-Vb-ey5" id="xYs-ZW-TKy"/>
+                        <outlet property="questionDescriptionLabel" destination="X25-fq-9Jw" id="6tR-NP-u26"/>
+                        <outlet property="questionLabel" destination="ob1-KC-NQ8" id="Kq5-4N-HiD"/>
+                        <outlet property="secondTextField" destination="se6-iw-RmG" id="lKl-Se-zVF"/>
+                        <outlet property="submitAnswerButton" destination="GJT-GD-kcK" id="6P0-nL-78w"/>
+                        <outlet property="thirdTextField" destination="NMq-6n-krM" id="rtm-2S-bMZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHB-7L-lch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2482.608695652174" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W5G-7F-QsX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iPg-ue-NKc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bxr-E2-mKn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="t2q-lc-hwt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A98-mp-gYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="compass-logo" width="640" height="640"/>
+    </resources>
+</document>
