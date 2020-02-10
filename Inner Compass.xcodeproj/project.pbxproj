@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FD781F623F0DDC900AF901B /* ToddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD781F523F0DDC900AF901B /* ToddViewController.swift */; };
+		5FD781F823F0E79100AF901B /* QuestionCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD781F723F0E79100AF901B /* QuestionCellTableViewCell.swift */; };
 		602AB39F23DFC1E30062C1FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602AB39E23DFC1E30062C1FD /* AppDelegate.swift */; };
 		602AB3A123DFC1E30062C1FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602AB3A023DFC1E30062C1FD /* SceneDelegate.swift */; };
 		602AB3A323DFC1E30062C1FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602AB3A223DFC1E30062C1FD /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FD781F523F0DDC900AF901B /* ToddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToddViewController.swift; sourceTree = "<group>"; };
+		5FD781F723F0E79100AF901B /* QuestionCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCellTableViewCell.swift; sourceTree = "<group>"; };
 		602AB39B23DFC1E30062C1FD /* Inner Compass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inner Compass.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		602AB39E23DFC1E30062C1FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		602AB3A023DFC1E30062C1FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,8 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				602AB3A223DFC1E30062C1FD /* ViewController.swift */,
+				5FD781F523F0DDC900AF901B /* ToddViewController.swift */,
 				60628A9923E101A0002A615E /* SurveyStartViewController.swift */,
 				60BA465223E52BC1002D5D1B /* QuestionType1ViewController.swift */,
+				5FD781F723F0E79100AF901B /* QuestionCellTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,8 +185,10 @@
 				60CCCCFC23EA4415007A691C /* QuestionBrain.swift in Sources */,
 				60CCCCFE23EA457B007A691C /* QuestionType1.swift in Sources */,
 				602AB39F23DFC1E30062C1FD /* AppDelegate.swift in Sources */,
+				5FD781F623F0DDC900AF901B /* ToddViewController.swift in Sources */,
 				60BA465323E52BC1002D5D1B /* QuestionType1ViewController.swift in Sources */,
 				602AB3A123DFC1E30062C1FD /* SceneDelegate.swift in Sources */,
+				5FD781F823F0E79100AF901B /* QuestionCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -106,7 +106,6 @@ extension QuestionType1ViewController: UITextFieldDelegate {
         
         //When user presses the return button, switch the first responder status to the next field.
         switch textField {
-            
         case firstTextField:
             secondTextField.becomeFirstResponder()
         case secondTextField:
@@ -119,7 +118,6 @@ extension QuestionType1ViewController: UITextFieldDelegate {
         
         return true
     }
-    
     
 //    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
 //
