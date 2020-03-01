@@ -1,22 +1,24 @@
 //
-//  QuestionCellTableViewCell.swift
+//  q1TextFieldCell.swift
 //  Inner Compass
 //
-//  Created by Todd Goldenbaum on 2/9/20.
+//  Created by Gabriel Sereni on 2/20/20.
 //  Copyright © 2020 Gabriel Sereni. All rights reserved.
 //
 
 import UIKit
 
-class QuestionCellTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var questionLabel: UILabel!
+class q1TextFieldCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
     }
+
 }

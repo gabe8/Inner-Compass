@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuestionType1ViewController: UIViewController {
+class OldQuestionType1ViewController: UIViewController {
 
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var questionDescriptionLabel: UILabel!
@@ -78,7 +78,7 @@ class QuestionType1ViewController: UIViewController {
     
 }
 
-extension QuestionType1ViewController: UITextViewDelegate {
+extension OldQuestionType1ViewController: UITextViewDelegate {
     
     //when the user begins to edit the text view, if the text view contains a placeholder (i.e. if its text color is light
     //gray) clear the placeholder text and set the text color to black in order to accommodate the user's entry.
@@ -99,7 +99,7 @@ extension QuestionType1ViewController: UITextViewDelegate {
     }
 }
 
-extension QuestionType1ViewController: UITextFieldDelegate {
+extension OldQuestionType1ViewController: UITextFieldDelegate {
 
     //This function is called when the user presses the return button
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
