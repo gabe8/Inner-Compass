@@ -46,6 +46,11 @@ struct QuestionBrain {
     func getQuestionDescription() -> String {
         return type1Questions[questionNumber].description
     }
+    func getQuestionInstructions() -> String {
+        let testString = "Hello there!!!"
+        return testString
+        
+    }
     
     mutating func nextQuestion() {
         

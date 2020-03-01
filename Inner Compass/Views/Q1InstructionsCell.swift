@@ -10,6 +10,8 @@ import UIKit
 
 class Q1InstructionsCell: UITableViewCell {
 
+    @IBOutlet weak var q1InstructionsLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
