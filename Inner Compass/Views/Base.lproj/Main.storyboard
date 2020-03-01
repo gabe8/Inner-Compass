@@ -48,8 +48,22 @@ Transform Your Life</string>
                                 <rect key="frame" x="87" y="125" width="241" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" alpha="0.25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mY-ld-Sk9">
+                                <rect key="frame" x="359" y="835" width="25" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="lS1-jl-i4Z"/>
+                                    <constraint firstAttribute="width" constant="25" id="uME-J6-yzF"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="2MM-be-ens" kind="show" id="Qms-eQ-SaU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87450980389999999" green="0.96470588239999999" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2mY-ld-Sk9" secondAttribute="trailing" constant="30" id="9ml-bO-Nii"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2mY-ld-Sk9" secondAttribute="bottom" constant="3" id="Gdc-Gh-yul"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="OuN-vQ-ngB"/>
@@ -60,6 +74,16 @@ Transform Your Life</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="913.04347826086962" y="137.94642857142856"/>
+        </scene>
+        <!--TGSurveyViewController-->
+        <scene sceneID="RCe-ZT-854">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TGSurveyViewController" id="2MM-be-ens" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hfK-Hi-6GF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WK2-pC-vLX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="538"/>
         </scene>
         <!--Survey Start View Controller-->
         <scene sceneID="1Lx-g1-ytK">

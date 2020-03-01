@@ -1,26 +1,21 @@
 //
-//  QuestionT1Cell.swift
+//  TGDescriptionCell.swift
 //  Inner Compass
 //
-//  Created by Gabriel Sereni on 2/17/20.
+//  Created by Todd Goldenbaum on 2/29/20.
 //  Copyright © 2020 Gabriel Sereni. All rights reserved.
 //
 
 import UIKit
 
-class Q1QuestionCell: UITableViewCell {
-
-    @IBOutlet weak var q1QuestionLabel: UILabel!
+class TGDescriptionCell: UITableViewCell {
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-
 }
