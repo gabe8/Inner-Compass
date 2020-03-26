@@ -8,7 +8,17 @@
 
 import UIKit
 
+protocol Q1SubmitButtonCellDelegate {
+    func q1ButtonPressed()
+}
+
 class Q1ButtonCell: UITableViewCell {
+    var q1ButtonCellDelegate: Q1SubmitButtonCellDelegate?
+    
+    @IBAction func q1ButtonPressed(_ sender: UIButton) {
+        q1ButtonCellDelegate?.q1ButtonPressed()
+    }
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,7 +27,6 @@ class Q1ButtonCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
 

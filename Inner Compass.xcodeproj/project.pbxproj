@@ -28,6 +28,7 @@
 		60BA465323E52BC1002D5D1B /* OldQuestionType1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BA465223E52BC1002D5D1B /* OldQuestionType1ViewController.swift */; };
 		60CCCCFC23EA4415007A691C /* QuestionBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCCCFB23EA4415007A691C /* QuestionBrain.swift */; };
 		60CCCCFE23EA457B007A691C /* QuestionType1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCCCFD23EA457B007A691C /* QuestionType1.swift */; };
+		60DB56F02412DEAB003D8DF7 /* Q1ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB56EF2412DEAB003D8DF7 /* Q1ButtonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		60BA465223E52BC1002D5D1B /* OldQuestionType1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldQuestionType1ViewController.swift; sourceTree = "<group>"; };
 		60CCCCFB23EA4415007A691C /* QuestionBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBrain.swift; sourceTree = "<group>"; };
 		60CCCCFD23EA457B007A691C /* QuestionType1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionType1.swift; sourceTree = "<group>"; };
+		60DB56EF2412DEAB003D8DF7 /* Q1ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1ButtonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				603C355D23FC8AE700FE6A8D /* Q1DescriptionCell.swift */,
 				603C355F23FCCA0600FE6A8D /* Q1InstructionsCell.swift */,
 				6031475F23FF45B000D31302 /* Q1TextFieldCell.swift */,
+				60DB56EF2412DEAB003D8DF7 /* Q1ButtonCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				60BA465323E52BC1002D5D1B /* OldQuestionType1ViewController.swift in Sources */,
 				5F93DA26240B7BD3001DDDAB /* TGQuestionCell.swift in Sources */,
 				5F93DA2E240B8009001DDDAB /* TGSubmitButtonCell.swift in Sources */,
+				60DB56F02412DEAB003D8DF7 /* Q1ButtonCell.swift in Sources */,
 				603C356023FCCA0600FE6A8D /* Q1InstructionsCell.swift in Sources */,
 				602AB3A123DFC1E30062C1FD /* SceneDelegate.swift in Sources */,
 				5F93DA28240B7BE2001DDDAB /* TGDescriptionCell.swift in Sources */,

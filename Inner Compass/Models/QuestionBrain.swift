@@ -47,7 +47,7 @@ struct QuestionBrain {
         return type1Questions[questionNumber].description
     }
     func getQuestionInstructions() -> String {
-        let testString = "Hello there!!!"
+        let testString = "Write down your final one to three answers in the fields below using a short phrase or single word for each value.  Then click the button below to proceed to the next question."
         return testString
         
     }
@@ -61,7 +61,7 @@ struct QuestionBrain {
     func saveAnswer() {
         
         //Take the values from the UITextfields and save it into a record in UserDefaults
-        let defaults = UserDefaults.standard
+        //let defaults = UserDefaults.standard
         
         
     }
