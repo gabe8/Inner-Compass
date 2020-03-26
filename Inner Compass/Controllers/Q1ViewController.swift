@@ -45,7 +45,7 @@ extension Q1ViewController: UITableViewDataSource {
     
     // This method sets the total numer of rows in the table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
     }
     
     // This method will be called however many times is indicated by the numer of rows above and sets the cell.  It creates
@@ -156,8 +156,10 @@ extension Q1ViewController: Q1SubmitButtonCellDelegate {
         // Iterate to the next question or take them elsewhere?
         
         // Load the next question in the survey onto the screen.
-        //questionCount += questionCount + 1
-        //tableView.reloadData()
+        
+        questionCount += questionCount + 1
+        questionBrain.questionNumber = questionCount
+        tableView.reloadData()
         print("Submit button pressed")
     }
 }
