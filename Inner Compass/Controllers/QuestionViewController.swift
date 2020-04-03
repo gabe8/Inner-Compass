@@ -5,40 +5,38 @@
 //  Created by Gabriel Sereni on 2/15/20.
 //  Copyright © 2020 Gabriel Sereni. All rights reserved.
 //
+//  Here is where I put class-specific comments.
+//
 
 import UIKit
 
-class Q1ViewController: UIViewController {
-    
-    @IBOutlet weak var q1ProgressBar: UIProgressView!
-    @IBOutlet weak var q1ProgressBarLabel: UILabel!
+class QuestionViewController: UIViewController {
+    @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var progressBarLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    // Good place for comment re: this group of properties
     var contentModel: ContentModelController?
-    var dataModel: UserDataModelController
-    var q1AnswerArray = [[Int:String]]()
-    var q1QuestionCount = 0
+    var dataModel: UserDataModelController?
+    var questionNumber = 0
     let defaults = UserDefaults.standard
     
+    // Good place for a function-specific comment
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        q1ProgressBar.progress = 0.1
-        q1ProgressBarLabel.text = "1 out of 10 questions completed"
+        progressBar.progress = 0.1
+        progressBarLabel.text = "1 out of 10 questions completed"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
         tableView.dataSource = self
-        contentModel = ContentModelController(questionNumber: q1QuestionCount)
+        contentModel = ContentModelController(questionNumber: questionNumber)
         dataModel = UserDataModelController()
     }
 }
 
-extension Q1ViewController: UITableViewDataSource {
-    
+extension QuestionViewController: UITableViewDataSource {
     // This method sets the total numer of rows in the table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 7
@@ -47,7 +45,6 @@ extension Q1ViewController: UITableViewDataSource {
     // This method will be called however many times is indicated by the numer of rows above and sets the cell.  It creates
     // the content for the cell as well unless indicated in the custom class file
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionCell", for: indexPath) as! Q1QuestionCell
@@ -83,62 +80,37 @@ extension Q1ViewController: UITableViewDataSource {
     }
     
 }
-extension Q1ViewController: Q1TextFieldCellDelegate {
-    func getAnswer(_ answerCount: Int, changedTo newString: String) {
+extension QuestionViewController: Q1TextFieldCellDelegate {
+    func getAnswer(number: Int) -> String? {
+        // Change the value of the dictionary at current questionCount location to the text entered by user.
+        if let existingAnswer = dataModel?.existingAnswerFromUserDefaults(questionNumber: questionNumber, answerNumber: number) {
+            return existingAnswer
+        }
+        return nil
+    }
+
+    func saveAnswer(_ answerCount: Int, changedTo newString: String) {
         // The user just changed the answer to question answerCount to have the new value newString.  This would be a
         // great time to jot that down in UserDefaults so we will not lose it if the app is interrupted.
         print("answer #\(answerCount) was just changed to \(newString)")
         
-        // Change the value of the dictionary at current questionCount location to the text entered by user.
-        q1AnswerArray[q1QuestionCount].updateValue(newString, forKey: answerCount)
-        
-        // Test the array and make sure it's functioning correctly
-        print("The question number we are on is \(q1QuestionCount) and the number of dictionaries in this array is \(q1AnswerArray.count)")
-        
-        //Here is a dump of the query before encoding it for UserDefaults
-        dump(q1AnswerArray)
-        
-        // Save the q1 question type answer array into UserDefaults as a custom object, so encode first
-        //        var encodedData: Any?
-        //        do {
-        //            encodedData = try NSKeyedArchiver.archivedData(withRootObject: q1AnswerArray, requiringSecureCoding: true)
-        //
-        //        } catch {
-        //            print("Error when trying to archive the data with NSKeyedArchiver")
-        //        }
-        //
-        //        defaults.set(encodedData, forKey: "q1TypeAnswersArray")
-        //
-        //        // Set a variable to the archived UserDefaults object
-        //        let dataToDecode = defaults.object(forKey: "q1TypeAnswersArray")
-        
-        //        if let decodedAnswerArray = NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dataToDecode as! Data)
-        //        {
-        //            print("It worked!")
-        //        } else {
-        //            print("It failed!")
-        //        }
-        
-        dataModel.saveArrayIntoUserDefaults(arrayToSave:q1AnswerArray)
-        
         print("Here is the array after it was retrived from UserDefaults and decoded")
-        dump(q1AnswerArray)
-        
     }
 }
 
-extension Q1ViewController: Q1SubmitButtonCellDelegate {
+extension QuestionViewController: Q1SubmitButtonCellDelegate {
     func q1ButtonPressed() {
-        // Increase the question count, so the data array q1AnswerArray knows to save the data to the appropriate dictionary
-        q1QuestionCount += q1QuestionCount + 1
-        
-        // Load the next question in the survey onto the screen.
-        contentModel?.nextQuestion()
-        tableView.reloadData()
         print("Submit button pressed")
+        
+        // Here we instance the storyboard, so we can instantiate our view controller with all the trimmings
+        // included in the storybaord's layout/UI features.
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let newViewController = storyboard.instantiateViewController(withIdentifier: "QuestionViewController") as? QuestionViewController {
+            newViewController.questionNumber = questionNumber + 1
+            navigationController?.pushViewController(newViewController, animated: true)
+        }
     }
 }
-
 
 //extension Q1ViewController: UITextFieldDelegate {
 //

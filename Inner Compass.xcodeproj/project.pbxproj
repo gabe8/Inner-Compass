@@ -20,7 +20,7 @@
 		602AB3A823DFC1E50062C1FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 602AB3A723DFC1E50062C1FD /* Assets.xcassets */; };
 		602AB3AB23DFC1E50062C1FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602AB3A923DFC1E50062C1FD /* LaunchScreen.storyboard */; };
 		6031476023FF45B000D31302 /* Q1TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6031475F23FF45B000D31302 /* Q1TextFieldCell.swift */; };
-		603C355823F8E66A00FE6A8D /* Q1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C355723F8E66A00FE6A8D /* Q1ViewController.swift */; };
+		603C355823F8E66A00FE6A8D /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C355723F8E66A00FE6A8D /* QuestionViewController.swift */; };
 		603C355C23FB3F7E00FE6A8D /* Q1QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C355B23FB3F7E00FE6A8D /* Q1QuestionCell.swift */; };
 		603C355E23FC8AE700FE6A8D /* Q1DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C355D23FC8AE700FE6A8D /* Q1DescriptionCell.swift */; };
 		603C356023FCCA0600FE6A8D /* Q1InstructionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C355F23FCCA0600FE6A8D /* Q1InstructionsCell.swift */; };
@@ -48,7 +48,7 @@
 		602AB3AA23DFC1E50062C1FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		602AB3AC23DFC1E50062C1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6031475F23FF45B000D31302 /* Q1TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1TextFieldCell.swift; sourceTree = "<group>"; };
-		603C355723F8E66A00FE6A8D /* Q1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1ViewController.swift; sourceTree = "<group>"; };
+		603C355723F8E66A00FE6A8D /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		603C355B23FB3F7E00FE6A8D /* Q1QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1QuestionCell.swift; sourceTree = "<group>"; };
 		603C355D23FC8AE700FE6A8D /* Q1DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1DescriptionCell.swift; sourceTree = "<group>"; };
 		603C355F23FCCA0600FE6A8D /* Q1InstructionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1InstructionsCell.swift; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 				602AB3A223DFC1E30062C1FD /* ViewController.swift */,
 				60628A9923E101A0002A615E /* SurveyStartViewController.swift */,
 				60BA465223E52BC1002D5D1B /* OldQuestionType1ViewController.swift */,
-				603C355723F8E66A00FE6A8D /* Q1ViewController.swift */,
+				603C355723F8E66A00FE6A8D /* QuestionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -222,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				603C355823F8E66A00FE6A8D /* Q1ViewController.swift in Sources */,
+				603C355823F8E66A00FE6A8D /* QuestionViewController.swift in Sources */,
 				60B08C6C2434FB0E003BEC9D /* UserDataModelController.swift in Sources */,
 				602AB3A323DFC1E30062C1FD /* ViewController.swift in Sources */,
 				60628A9A23E101A0002A615E /* SurveyStartViewController.swift in Sources */,

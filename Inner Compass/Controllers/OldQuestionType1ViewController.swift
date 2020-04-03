@@ -51,11 +51,8 @@ class OldQuestionType1ViewController: UIViewController {
     }
     
     @IBAction func submitAnswer(_ sender: UIButton) {
-        
         //When the user clicks the submit answer button, save response, move counter to next question, update form to that
         //question
-  
-        questionBrain.nextQuestion()
         
         updateUI()
         
@@ -63,10 +60,6 @@ class OldQuestionType1ViewController: UIViewController {
         firstTextField.endEditing(true)
         secondTextField.endEditing(true)
         thirdTextField.endEditing(true)
-        
-        
-        
-           
     }
     
     

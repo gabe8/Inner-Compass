@@ -9,7 +9,6 @@
 import Foundation
 
 struct ContentModelController {
-    
     var questionNumber = 0
     
     let type1Questions = [
@@ -49,11 +48,6 @@ struct ContentModelController {
     func getQuestionInstructions() -> String {
         let testString = "Write down your final one to three answers in the fields below using a short phrase or single word for each value.  Then click the button below to proceed to the next question."
         return testString
-        
-    }
-    
-    mutating func nextQuestion() {
-        questionNumber += 1
     }
     
 //    func saveAnswer() {
@@ -62,5 +56,4 @@ struct ContentModelController {
 //        //let defaults = UserDefaults.standard
 //
 //    }
-    
 }
