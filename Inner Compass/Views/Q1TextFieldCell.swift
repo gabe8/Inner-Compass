@@ -18,7 +18,7 @@ class Q1TextFieldCell: UITableViewCell {
     
     @IBOutlet weak var answerTextField: UITextField!
     
-    var questionNumber: Int?
+    var textFieldNumber: Int?
     var textFieldCellDelegate: Q1TextFieldCellDelegate?
     
     
@@ -41,7 +41,7 @@ class Q1TextFieldCell: UITableViewCell {
 extension Q1TextFieldCell: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        textFieldCellDelegate?.getAnswer(questionNumber!, changedTo: textField.text!)
+        textFieldCellDelegate?.getAnswer(textFieldNumber!, changedTo: textField.text!)
         
     }
     

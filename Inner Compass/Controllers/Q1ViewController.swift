@@ -14,10 +14,10 @@ class Q1ViewController: UIViewController {
     @IBOutlet weak var q1ProgressBarLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    var questionBrain = QuestionBrain()
-    var q1AnswerArray = [[Int: String]]()
-    var q1AnswerDict = [Int:String]()
-    var questionCount = 0
+    var contentModel: ContentModelController?
+    var dataModel: UserDataModelController
+    var q1AnswerArray = [[Int:String]]()
+    var q1QuestionCount = 0
     let defaults = UserDefaults.standard
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,15 +29,11 @@ class Q1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         tableView.dataSource = self
-        
-        // Create an array and loop through it to create empty dictionaries as placeholders, used to store answers
-        for _ in 1...10 {
-            q1AnswerArray.append(q1AnswerDict)
-            //print(i)
-            //print("The number of dictionaries in this array is \(q1AnswerArray.count)")
-        }
+        contentModel = ContentModelController(questionNumber: q1QuestionCount)
+        dataModel = UserDataModelController()
     }
 }
 
@@ -55,32 +51,30 @@ extension Q1ViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionCell", for: indexPath) as! Q1QuestionCell
-            cell.q1QuestionLabel.text = questionBrain.getQuestionMain()
+            cell.q1QuestionLabel.text = contentModel?.getQuestionMain()
             //cell.textLabel?.text = "Hello can you see me 1?"
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "DescriptionCell", for: indexPath) as! Q1DescriptionCell
-            cell.q1DescriptionLabel.text = questionBrain.getQuestionDescription()
+            cell.q1DescriptionLabel.text = contentModel?.getQuestionDescription()
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "InstructionsCell", for: indexPath) as! Q1InstructionsCell
-            cell.q1InstructionsLabel.text = questionBrain.getQuestionInstructions()
+            cell.q1InstructionsLabel.text = contentModel?.getQuestionInstructions()
             return cell
         case 3, 4, 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: "AnswerCell", for: indexPath) as! Q1TextFieldCell
             cell.textFieldCellDelegate = self
-            cell.questionNumber = indexPath.row - 2
-            print("Answer cell is now appearing")
+            cell.textFieldNumber = indexPath.row - 2
+            //let indexRowToKey = indexPath.row - 3
+            //cell.answerTextField.text = q1AnswerArray[questionCount][indexRowToKey]
+            //print(cell.answerTextField.text)
             return cell
         case 6:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ButtonCell", for: indexPath) as! Q1ButtonCell
             cell.q1ButtonCellDelegate = self
-            print("Button cell is now appearing")
             return cell
         default: break
-            //            let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionCell", for: indexPath) as! Q1QuestionCell
-            //            cell.textLabel?.text = "Hello can you see me?  This shouldn't appear"
-            //            return cell
         }
         return UITableViewCell()
         // This is where we would populate the cells with the correct data for the current question.
@@ -96,10 +90,10 @@ extension Q1ViewController: Q1TextFieldCellDelegate {
         print("answer #\(answerCount) was just changed to \(newString)")
         
         // Change the value of the dictionary at current questionCount location to the text entered by user.
-        q1AnswerArray[questionCount].updateValue(newString, forKey: answerCount)
+        q1AnswerArray[q1QuestionCount].updateValue(newString, forKey: answerCount)
         
         // Test the array and make sure it's functioning correctly
-        print("The question number we are on is \(questionCount) and the number of dictionaries in this array is \(q1AnswerArray.count)")
+        print("The question number we are on is \(q1QuestionCount) and the number of dictionaries in this array is \(q1AnswerArray.count)")
         
         //Here is a dump of the query before encoding it for UserDefaults
         dump(q1AnswerArray)
@@ -125,26 +119,8 @@ extension Q1ViewController: Q1TextFieldCellDelegate {
         //            print("It failed!")
         //        }
         
+        dataModel.saveArrayIntoUserDefaults(arrayToSave:q1AnswerArray)
         
-        // Encode the array, save it into UserDefaults, then decode it to continue using
-        do {
-            try defaults.set(JSONEncoder().encode(q1AnswerArray), forKey: "q1TypeAnswersArray")
-            print("Array is saved in defaults without an issue")
-        } catch {
-            print(error)
-        }
-        
-        if let data = defaults.data(forKey: "q1TypeAnswersArray") {
-            do {
-                let q1AnswerArray = try JSONDecoder().decode([[Int: String]].self, from: data)
-            } catch {
-                print(error)
-            }
-        } else {
-            print("There was an issue with adding the array to UserDefaults")
-        }
-        
-        // Check the array to make sure that it is reloaded with the value from UserDefaults
         print("Here is the array after it was retrived from UserDefaults and decoded")
         dump(q1AnswerArray)
         
@@ -153,12 +129,11 @@ extension Q1ViewController: Q1TextFieldCellDelegate {
 
 extension Q1ViewController: Q1SubmitButtonCellDelegate {
     func q1ButtonPressed() {
-        // Iterate to the next question or take them elsewhere?
+        // Increase the question count, so the data array q1AnswerArray knows to save the data to the appropriate dictionary
+        q1QuestionCount += q1QuestionCount + 1
         
         // Load the next question in the survey onto the screen.
-        
-        questionCount += questionCount + 1
-        questionBrain.questionNumber = questionCount
+        contentModel?.nextQuestion()
         tableView.reloadData()
         print("Submit button pressed")
     }
@@ -204,8 +179,6 @@ extension Q1ViewController: Q1SubmitButtonCellDelegate {
 //
 //    }
 //
-//}
-
 //             //!!!!!!!!!some people have ? after Field - ask Todd about this
 //            cell.answerTextField?.tag = indexPath.row
 //

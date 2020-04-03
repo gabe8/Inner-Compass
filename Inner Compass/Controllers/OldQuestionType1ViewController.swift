@@ -19,7 +19,7 @@ class OldQuestionType1ViewController: UIViewController {
     @IBOutlet weak var submitAnswerButton: UIButton!
     
     //Set an instance of the QuestionBrain Struct
-    var questionBrain = QuestionBrain()
+    var questionBrain = ContentModelController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +54,7 @@ class OldQuestionType1ViewController: UIViewController {
         
         //When the user clicks the submit answer button, save response, move counter to next question, update form to that
         //question
-        questionBrain.saveAnswer()
+  
         questionBrain.nextQuestion()
         
         updateUI()
