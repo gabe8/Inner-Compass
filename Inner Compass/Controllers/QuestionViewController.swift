@@ -1,5 +1,5 @@
 //
-//  Q1ViewController.swift
+//  QuestionsViewController.swift
 //  Inner Compass
 //
 //  Created by Gabriel Sereni on 2/15/20.
@@ -15,17 +15,23 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var progressBarLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    // Good place for comment re: this group of properties
+    // Declare the content and data models to be used by the view controller as well as the question number that matches to
+    // the as well as the question number to keepe track of the viewcontroller instance
     var contentModel: ContentModelController?
     var dataModel: UserDataModelController?
     var questionNumber = 0
-    let defaults = UserDefaults.standard
+    
     
     // Good place for a function-specific comment
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        progressBar.progress = 0.1
-        progressBarLabel.text = "1 out of 10 questions completed"
+
+        // Set progress bar to the questionNumber value
+        progressBar.progress = Float(questionNumber) + 0.1
+        
+        // Set a variable to use in the progress text
+        let questionCountProgress = questionNumber + 1
+        progressBarLabel.text = "\(questionCountProgress) out of 10 questions completed"
     }
     
     override func viewDidLoad() {
@@ -63,6 +69,9 @@ extension QuestionViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "AnswerCell", for: indexPath) as! Q1TextFieldCell
             cell.textFieldCellDelegate = self
             cell.textFieldNumber = indexPath.row - 2
+            // ADD THIS: use existingAnswerFromUserDefaults(questionNumber: Int, answerNumber: Int) to set text for each text
+            // for each text field
+            
             //let indexRowToKey = indexPath.row - 3
             //cell.answerTextField.text = q1AnswerArray[questionCount][indexRowToKey]
             //print(cell.answerTextField.text)
@@ -93,21 +102,24 @@ extension QuestionViewController: Q1TextFieldCellDelegate {
         // The user just changed the answer to question answerCount to have the new value newString.  This would be a
         // great time to jot that down in UserDefaults so we will not lose it if the app is interrupted.
         print("answer #\(answerCount) was just changed to \(newString)")
-        
-        print("Here is the array after it was retrived from UserDefaults and decoded")
+        dataModel?.saveAnswer(newString, forQuestionNumber: questionNumber, answerNumber: answerCount)
     }
 }
 
 extension QuestionViewController: Q1SubmitButtonCellDelegate {
     func q1ButtonPressed() {
-        print("Submit button pressed")
+        //print("Submit button pressed")
         
         // Here we instance the storyboard, so we can instantiate our view controller with all the trimmings
         // included in the storybaord's layout/UI features.
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let newViewController = storyboard.instantiateViewController(withIdentifier: "QuestionViewController") as? QuestionViewController {
             newViewController.questionNumber = questionNumber + 1
-            navigationController?.pushViewController(newViewController, animated: true)
+            if newViewController.questionNumber < 10 {
+                navigationController?.pushViewController(newViewController, animated: true)
+            } else {
+                performSegue(withIdentifier: "goToSurveyCompletion", sender: nil)
+            }
         }
     }
 }

@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -31,8 +34,6 @@ class ViewController: UIViewController {
         // Show the Navigation Bar
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
-    
-    
     
     @IBAction func startHereButtonPressed(_ sender: UIButton) {
     }

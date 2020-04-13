@@ -25,6 +25,7 @@
 		603C355E23FC8AE700FE6A8D /* Q1DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C355D23FC8AE700FE6A8D /* Q1DescriptionCell.swift */; };
 		603C356023FCCA0600FE6A8D /* Q1InstructionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C355F23FCCA0600FE6A8D /* Q1InstructionsCell.swift */; };
 		60628A9A23E101A0002A615E /* SurveyStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60628A9923E101A0002A615E /* SurveyStartViewController.swift */; };
+		60A3B4CA243D18EC00537C0D /* ValuesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A3B4C9243D18EC00537C0D /* ValuesListViewController.swift */; };
 		60B08C6C2434FB0E003BEC9D /* UserDataModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B08C6B2434FB0E003BEC9D /* UserDataModelController.swift */; };
 		60BA465323E52BC1002D5D1B /* OldQuestionType1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BA465223E52BC1002D5D1B /* OldQuestionType1ViewController.swift */; };
 		60CCCCFC23EA4415007A691C /* ContentModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCCCFB23EA4415007A691C /* ContentModelController.swift */; };
@@ -53,6 +54,7 @@
 		603C355D23FC8AE700FE6A8D /* Q1DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1DescriptionCell.swift; sourceTree = "<group>"; };
 		603C355F23FCCA0600FE6A8D /* Q1InstructionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1InstructionsCell.swift; sourceTree = "<group>"; };
 		60628A9923E101A0002A615E /* SurveyStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStartViewController.swift; sourceTree = "<group>"; };
+		60A3B4C9243D18EC00537C0D /* ValuesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuesListViewController.swift; sourceTree = "<group>"; };
 		60B08C6B2434FB0E003BEC9D /* UserDataModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModelController.swift; sourceTree = "<group>"; };
 		60BA465223E52BC1002D5D1B /* OldQuestionType1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldQuestionType1ViewController.swift; sourceTree = "<group>"; };
 		60CCCCFB23EA4415007A691C /* ContentModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModelController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				60628A9923E101A0002A615E /* SurveyStartViewController.swift */,
 				60BA465223E52BC1002D5D1B /* OldQuestionType1ViewController.swift */,
 				603C355723F8E66A00FE6A8D /* QuestionViewController.swift */,
+				60A3B4C9243D18EC00537C0D /* ValuesListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				60CCCCFE23EA457B007A691C /* QuestionType1.swift in Sources */,
 				603C355C23FB3F7E00FE6A8D /* Q1QuestionCell.swift in Sources */,
 				603C355E23FC8AE700FE6A8D /* Q1DescriptionCell.swift in Sources */,
+				60A3B4CA243D18EC00537C0D /* ValuesListViewController.swift in Sources */,
 				6031476023FF45B000D31302 /* Q1TextFieldCell.swift in Sources */,
 				5F93DA2A240B7BEF001DDDAB /* TGAnswerCell.swift in Sources */,
 				602AB39F23DFC1E30062C1FD /* AppDelegate.swift in Sources */,

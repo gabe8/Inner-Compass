@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iPg-ue-NKc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iPg-ue-NKc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -346,11 +346,11 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yx2-oi-aho">
-                                                    <rect key="frame" x="60" y="-1" width="295" height="46"/>
+                                                    <rect key="frame" x="158" y="-1" width="99" height="46"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.30196078430000001" green="0.50196078430000002" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                                    <state key="normal" title="Submit Answer">
+                                                    <state key="normal" title="Next">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
@@ -389,7 +389,7 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                         <outlet property="progressBar" destination="yzG-ME-okn" id="lqA-Wh-DP9"/>
                         <outlet property="progressBarLabel" destination="8PL-sp-0lf" id="iCe-cX-HnY"/>
                         <outlet property="tableView" destination="ICT-Zo-ghQ" id="Xyc-1s-kPY"/>
-                        <segue destination="3aw-7z-4Hf" kind="show" id="bNp-tG-t9s"/>
+                        <segue destination="3aw-7z-4Hf" kind="show" identifier="goToSurveyCompletion" id="bNp-tG-t9s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44F-cY-2US" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -405,7 +405,7 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations, you completed the survey!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqc-Zq-XWz">
-                                <rect key="frame" x="50" y="235" width="323" height="40"/>
+                                <rect key="frame" x="50" y="235" width="323" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
@@ -416,6 +416,9 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Click here to finalize your values list"/>
+                                <connections>
+                                    <segue destination="LpF-kk-BPe" kind="show" id="Kse-S2-5rh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -427,10 +430,10 @@ To do this, you will take a short survey of 15 questions. In each of these quest
             </objects>
             <point key="canvasLocation" x="3315.9420289855075" y="-265.17857142857144"/>
         </scene>
-        <!--View Controller-->
+        <!--Values Hierarchy-->
         <scene sceneID="gxQ-Cl-Csr">
             <objects>
-                <viewController id="LpF-kk-BPe" sceneMemberID="viewController">
+                <viewController id="LpF-kk-BPe" customClass="ValuesListViewController" customModule="Inner_Compass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AO7-S4-icJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -440,9 +443,9 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9Z-ab-ho2">
-                                        <rect key="frame" x="8" y="69" width="398" height="21"/>
+                                        <rect key="frame" x="8" y="69" width="2405" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Below is your hiearchy of values, based on your survey answers.  Next, refine this list by rarranging the values by drag and drop in order of important to you, with those on the top being the most important and those on the bottom being the least.  Then delete any on the bottom until you have 10 or less values.  </string>
+                                        <string key="text">Below is your hierarchy of values, based on your survey answers.  Next, refine this list by rarranging the values by drag and drop in order of importantance to you, with those on the top being the most important and those on the bottom being the least.  Then delete any on the bottom until you have 10 or less values.  </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -450,15 +453,44 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dPC-i9-nZv">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dPC-i9-nZv">
                                 <rect key="frame" x="0.0" y="240" width="414" height="517"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="valueCell" textLabel="Wxv-8I-6kw" style="IBUITableViewCellStyleDefault" id="irN-iy-46p">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="irN-iy-46p" id="EvZ-lp-jQ1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wxv-8I-6kw">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Bge-vs-cjG"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Values Hierarchy" id="Ap2-wd-Kqx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zXG-R1-srW">
+                            <connections>
+                                <action selector="onAddTapped:" destination="LpF-kk-BPe" id="yvB-9Y-deD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="dPC-i9-nZv" id="ZQr-Sy-OEA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmg-6W-Bx5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,27 +10,24 @@ import Foundation
 
 // Used to setup data model, store question answers and location in survey
 struct UserDataModelController {
-    var defaults = UserDefaults.standard
-    var q1AnswerArray = [[Int:String]]()
     
-//    func setupDataModel () -> {
-// Setup array if first time loading
-// check userDefaults to set question count
-// check Userdefaults to set the array of answers
-//
-//
-//    }
     
     mutating func setupAnswerArray() {
         // Check to see if UserDefaults is empty and if it is, create a new array to store questions answers
-     
-        if defaults.object(forKey: "q1AnswerArray") == nil {
+        let defaults = UserDefaults.standard
+        var arrayToSave = [[Int:String]]()
+        if defaults.object(forKey: "q1TypeAnswersArray") == nil {
             // Create an array and loop through it to create empty dictionaries as placeholders, used to store answers
             for _ in 1...10 {
-                q1AnswerArray.append([Int:String]())
+                arrayToSave.append([Int:String]())
             }
-            
-            // saveArrayIntoUserDefaults(arrayToSave:q1AnswerArray)
+            print("The array has been initialized and here are it's values:")
+            dump(arrayToSave)
+            do {
+                try defaults.set(JSONEncoder().encode(arrayToSave), forKey: "q1TypeAnswersArray")
+            } catch {
+                print(error)
+            }
         }
     }
     
@@ -44,37 +41,43 @@ struct UserDataModelController {
         
         // Encode the array and save it into UserDefaults
         do {
-            let arrayToSave = [[Int:String]]() // TG: Temporary- just to keep the compiler happy.
+            let defaults = UserDefaults.standard
+            var arrayToSave = storedUserData()
+            arrayToSave[questionNumber][answerNumber] = answerString
+            print("Here is the array after the new textfield string was saved")
+            dump(arrayToSave)
             try defaults.set(JSONEncoder().encode(arrayToSave), forKey: "q1TypeAnswersArray")
-            print("Array is saved in defaults without an issue")
         } catch {
             print("There was an error trying to encode the array and adding it to UserDefaults")
             print(error)
         }
     }
 
-    mutating func existingAnswerFromUserDefaults(questionNumber: Int, answerNumber: Int) -> String? {
-        if let data = defaults.data(forKey: "q1TypeAnswersArray") {
-            do {
-                // TG: this might be better done with a temporary variable if there is no other need for it elsewhere in this struct- doensnt' nec. have to be a property of the struct.
-                // TG: Replace the following with a call to storedUserData()
-                q1AnswerArray = try JSONDecoder().decode([[Int: String]].self, from: data)
-            } catch {
-                print("There was an error trying to decode data from ")
-                print(error)
-            }
-        } else {
-            print("There was an issue with decoding and setting new array to value in UserDefaults")
-        }
-    
-        return q1AnswerArray[questionNumber][answerNumber] ?? nil
+
+    mutating func existingAnswerFromUserDefaults(questionNumber: Int, answerNumber: Int) -> String? {    
+        var arrayToSave = [[Int:String]]()
+        arrayToSave = storedUserData()
+        return arrayToSave[questionNumber][answerNumber] ?? nil
     }
     
     // TG: Call this from both restoreArray... and saveAnswer()
     // If there are ever performance issues, an instance variable for redundantly storing the contents of userdefaults can
     // be reinstated, and that value can be returned here rather than a JSONDecoded data structure
+    
     func storedUserData() -> [[Int:String]] {
         // TG: Dig into user defaults with JSONDecoder and return the whole thing
-        return  [[Int:String]]()
+        let defaults = UserDefaults.standard
+        var arrayToSave = [[Int:String]]()
+        if let data = defaults.data(forKey: "q1TypeAnswersArray") {
+            do {
+                arrayToSave = try JSONDecoder().decode([[Int: String]].self, from: data)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("Issue with decoding and setting new array")
+        }
+        //return  [[Int:String]]()
+        return arrayToSave
     }
 }
