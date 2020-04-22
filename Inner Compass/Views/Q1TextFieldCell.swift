@@ -11,11 +11,13 @@ import UIKit
 protocol Q1TextFieldCellDelegate {
     func getAnswer(number: Int) -> String?
     func saveAnswer(_ answerCount: Int, changedTo newString: String)
+    func didHitReturn(_ fieldNumber: Int)
 }
 
 class Q1TextFieldCell: UITableViewCell {
     @IBOutlet weak var answerTextField: UITextField!
     
+    // This variable is set by the table in the delegate view controller
     var textFieldNumber: Int?
     var textFieldCellDelegate: Q1TextFieldCellDelegate?
     
@@ -45,7 +47,8 @@ extension Q1TextFieldCell: UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.endEditing(true)
+        textField.resignFirstResponder()
+        textFieldCellDelegate?.didHitReturn(textFieldNumber!)
+        return true
     }
 }
-

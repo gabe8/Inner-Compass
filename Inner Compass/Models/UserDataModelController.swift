@@ -44,11 +44,11 @@ struct UserDataModelController {
             let defaults = UserDefaults.standard
             var arrayToSave = storedUserData()
             arrayToSave[questionNumber][answerNumber] = answerString
-            print("Here is the array after the new textfield string was saved")
-            dump(arrayToSave)
+            //print("Here is the array after the new textfield string was saved")
+            //dump(arrayToSave)
             try defaults.set(JSONEncoder().encode(arrayToSave), forKey: "q1TypeAnswersArray")
         } catch {
-            print("There was an error trying to encode the array and adding it to UserDefaults")
+            //print("There was an error trying to encode the array and adding it to UserDefaults")
             print(error)
         }
     }
@@ -77,7 +77,23 @@ struct UserDataModelController {
         } else {
             print("Issue with decoding and setting new array")
         }
-        //return  [[Int:String]]()
+     
         return arrayToSave
     }
+    
+    // Save the questionNumber into UserDefaults
+    func saveQuestionNumber(_ questionNumber: Int) {
+           let defaults = UserDefaults.standard
+            defaults.set(questionNumber, forKey: "questionNumber")
+       }
+    
+    //Pulls the value of the questionNumber (location in the survey) from UserDefaults for state restoration
+    func storedQuestionNumber() -> Int {
+        let defaults = UserDefaults.standard
+        let extractedQuestionNumber = defaults.integer(forKey: "questionNumber")
+        print("This is the exactrated question number value from UserDefaults:")
+        print(extractedQuestionNumber)
+        return extractedQuestionNumber
+    }
+    
 }

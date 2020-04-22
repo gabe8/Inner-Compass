@@ -15,30 +15,37 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var progressBarLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    // Declare the content and data models to be used by the view controller as well as the question number that matches to
-    // the as well as the question number to keepe track of the viewcontroller instance
+    // Declare the content and data models to be used by the view controller
+    // as well as the question number to keepe track of the viewcontroller instance
     var contentModel: ContentModelController?
     var dataModel: UserDataModelController?
     var questionNumber = 0
     
-    
     // Good place for a function-specific comment
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
-        // Set progress bar to the questionNumber value
-        progressBar.progress = Float(questionNumber) + 0.1
         
-        // Set a variable to use in the progress text
+//        if let questionNumber = dataModel?.storedQuestionNumber() {
+//            contentModel?.questionNumber = questionNumber
+//        } else {
+//            questionNumber = 0
+//        }
+        
+        // Set progress bar's progress
+        let progressBarProgress = Float(questionNumber)/10
+        progressBar.progress = progressBarProgress
+        
         let questionCountProgress = questionNumber + 1
-        progressBarLabel.text = "\(questionCountProgress) out of 10 questions completed"
+        progressBarLabel.text = "Step \(questionCountProgress) of 10"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.dataSource = self
+        
         contentModel = ContentModelController(questionNumber: questionNumber)
-        dataModel = UserDataModelController()
+        dataModel = UserDataModelController() 
     }
 }
 
@@ -68,13 +75,14 @@ extension QuestionViewController: UITableViewDataSource {
         case 3, 4, 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: "AnswerCell", for: indexPath) as! Q1TextFieldCell
             cell.textFieldCellDelegate = self
-            cell.textFieldNumber = indexPath.row - 2
-            // ADD THIS: use existingAnswerFromUserDefaults(questionNumber: Int, answerNumber: Int) to set text for each text
-            // for each text field
             
-            //let indexRowToKey = indexPath.row - 3
-            //cell.answerTextField.text = q1AnswerArray[questionCount][indexRowToKey]
-            //print(cell.answerTextField.text)
+            // Determine the textfield's number (out of the three)
+            let indexRowToKey = indexPath.row - 2
+            cell.textFieldNumber = indexRowToKey
+            
+            // Set each textfield to it's saved value in UserDefaults
+            cell.answerTextField.text = dataModel?.existingAnswerFromUserDefaults(questionNumber: questionNumber, answerNumber: indexRowToKey)
+  
             return cell
         case 6:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ButtonCell", for: indexPath) as! Q1ButtonCell
@@ -87,7 +95,6 @@ extension QuestionViewController: UITableViewDataSource {
         // This will require subclassing UITableViewCell for each of our prototypes, in order to have
         // IBOutlets to the labels or textfields within the cell, depending on which prototype it is.
     }
-    
 }
 extension QuestionViewController: Q1TextFieldCellDelegate {
     func getAnswer(number: Int) -> String? {
@@ -97,12 +104,28 @@ extension QuestionViewController: Q1TextFieldCellDelegate {
         }
         return nil
     }
-
+    
     func saveAnswer(_ answerCount: Int, changedTo newString: String) {
         // The user just changed the answer to question answerCount to have the new value newString.  This would be a
         // great time to jot that down in UserDefaults so we will not lose it if the app is interrupted.
         print("answer #\(answerCount) was just changed to \(newString)")
         dataModel?.saveAnswer(newString, forQuestionNumber: questionNumber, answerNumber: answerCount)
+    }
+    
+    func didHitReturn(_ fieldNumber: Int) {
+        // The user just pressed the return button on their keyboard
+        print("The return button was just pressed for the #\(fieldNumber) field")
+        
+        if fieldNumber == 3 {
+            q1ButtonPressed()
+            return
+        }
+        
+        let indexPath = IndexPath(row: fieldNumber + 3, section: 0)
+        tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+        if let cell = tableView.cellForRow(at: indexPath) as? Q1TextFieldCell {
+            cell.answerTextField.becomeFirstResponder()
+        }
     }
 }
 
@@ -115,6 +138,7 @@ extension QuestionViewController: Q1SubmitButtonCellDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let newViewController = storyboard.instantiateViewController(withIdentifier: "QuestionViewController") as? QuestionViewController {
             newViewController.questionNumber = questionNumber + 1
+            //dataModel?.saveQuestionNumber(newViewController.questionNumber)
             if newViewController.questionNumber < 10 {
                 navigationController?.pushViewController(newViewController, animated: true)
             } else {

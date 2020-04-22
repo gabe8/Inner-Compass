@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iPg-ue-NKc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,10 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m47-dM-ckm">
-                                <rect key="frame" x="57" y="674" width="295" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.30196078431372547" green="0.50196078431372548" blue="0.89411764705882346" alpha="1" colorSpace="deviceRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m47-dM-ckm">
+                                <rect key="frame" x="82" y="653" width="250" height="52"/>
+                                <color key="backgroundColor" red="0.32549019607843138" green="0.61568627450980395" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="PX0-Rj-QMY"/>
+                                    <constraint firstAttribute="height" constant="52" id="ovT-dW-AHk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Start Here">
@@ -28,41 +31,37 @@
                                     <segue destination="lvu-ov-SQy" kind="show" id="S7H-ve-rNX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inner Compass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ng-lH-bpy">
-                                <rect key="frame" x="63" y="381" width="289" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inner Compass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ng-lH-bpy">
+                                <rect key="frame" x="62.5" y="399" width="289" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iH-P6-x7U">
-                                <rect key="frame" x="73" y="443" width="269" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Discover Your Values
-Transform Your Life</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover Your Core Values" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iH-P6-x7U">
+                                <rect key="frame" x="38.5" y="461" width="337.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="compass-logo" translatesAutoresizingMaskIntoConstraints="NO" id="E40-Yx-bFZ">
-                                <rect key="frame" x="87" y="125" width="241" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" alpha="0.25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mY-ld-Sk9">
-                                <rect key="frame" x="359" y="835" width="25" height="24"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass-logo" translatesAutoresizingMaskIntoConstraints="NO" id="E40-Yx-bFZ">
+                                <rect key="frame" x="85.5" y="133" width="243" height="230"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="lS1-jl-i4Z"/>
-                                    <constraint firstAttribute="width" constant="25" id="uME-J6-yzF"/>
+                                    <constraint firstAttribute="width" constant="243" id="2ah-BT-eTa"/>
+                                    <constraint firstAttribute="height" constant="230" id="cjd-0x-Qac"/>
                                 </constraints>
-                                <connections>
-                                    <segue destination="2MM-be-ens" kind="show" id="Qms-eQ-SaU"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.87450980389999999" green="0.96470588239999999" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2mY-ld-Sk9" secondAttribute="trailing" constant="30" id="9ml-bO-Nii"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2mY-ld-Sk9" secondAttribute="bottom" constant="3" id="Gdc-Gh-yul"/>
+                            <constraint firstItem="E40-Yx-bFZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="6Lr-BU-pgo"/>
+                            <constraint firstItem="9Ng-lH-bpy" firstAttribute="top" secondItem="E40-Yx-bFZ" secondAttribute="bottom" constant="36" id="BFZ-FT-Fct"/>
+                            <constraint firstItem="9Ng-lH-bpy" firstAttribute="top" secondItem="E40-Yx-bFZ" secondAttribute="bottom" constant="36" id="DPb-q6-VYo"/>
+                            <constraint firstItem="4iH-P6-x7U" firstAttribute="top" secondItem="9Ng-lH-bpy" secondAttribute="bottom" constant="8" id="HcT-gU-RuV"/>
+                            <constraint firstItem="9Ng-lH-bpy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IEG-S8-PzC"/>
+                            <constraint firstItem="m47-dM-ckm" firstAttribute="top" secondItem="4iH-P6-x7U" secondAttribute="bottom" constant="156" id="cAW-3h-dSg"/>
+                            <constraint firstItem="4iH-P6-x7U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fMS-Rk-cSk"/>
+                            <constraint firstItem="m47-dM-ckm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g2l-lP-Dli"/>
+                            <constraint firstItem="E40-Yx-bFZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x45-f6-RgX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -73,7 +72,7 @@ Transform Your Life</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913.04347826086962" y="137.94642857142856"/>
+            <point key="canvasLocation" x="942" y="109"/>
         </scene>
         <!--TGSurveyViewController-->
         <scene sceneID="RCe-ZT-854">
@@ -90,10 +89,10 @@ Transform Your Life</string>
             <objects>
                 <viewController id="lvu-ov-SQy" customClass="SurveyStartViewController" customModule="Inner_Compass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nBi-UA-0c6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="2100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What to Know Before Starting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SK9-10-8ht">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How To Proceed:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SK9-10-8ht">
                                 <rect key="frame" x="17" y="110" width="380" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="ShC-B0-pjg"/>
@@ -102,22 +101,29 @@ Transform Your Life</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="TeH-au-gpS">
-                                <rect key="frame" x="20" y="166" width="374" height="1749"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeH-au-gpS">
+                                <rect key="frame" x="20" y="166" width="377" height="834"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">This app will enable you to discover and identify your personal values.  Your values are simply things that are important to you in your life, and govern your behavior, decisions, thinking, and how you live your life.  They operate in the background of your inner psychology and for most people are subconscious.  Most of us do not live consistently according to our true values and adopt or prioritize values that aren’t really ours or ones we would like.  These can come from society, our family, inherited belief system, etc.  This can result in indecision, inner conflict, depression, disappointment with life, an ability to achieve goals and more.   Knowing your true authentic values and their order of importance to you, empowers you to make better decisions and live a more fulfilling and happy life with greater self-awareness and integrity.  This app will help you to uncover your true values and give you a powerful piece of self-knowledge that can act as a guiding compass in your life.
+                                <mutableString key="text">This app will enable you to discover, identify and store your list of personal values.  Your values are simply things that are important to you in your life, and govern your behavior, decisions, thinking, and how you live your life.  Knowing your true authentic values and their order of importance, empowers you to make better decisions and live a more happy and fulfilling life with greater self-awareness, purpose and integrity.  Here’s how to use this app:
 
-To do this, you will take a short survey of 15 questions. In each of these questions you will write down your answers.  You may need time to reflect and brainstorm for the questions so feel free to take your time.  You can exit out and come back to the survey any time.  Once the survey is complete, the app will show you your list of current values, with which you can order them in order of priority and edit them to come to your final list.
-</string>
+- Answer the following short 10-question survey, and take as much time as you want for your answers.
+
+- Try to make your answers concise as either a single word or short phrase, so for example “Health”, “Happiness and Joy”, etc.  This will help you to make a concise list for easy checking.
+
+- You can answer with one value, two or three for a given question, there is no requirement for each question.
+
+- If you don’t want to answer a question, you can skip it by pressing the “next” button, but we highly recommend you answer all of them to help you “dig deeper”. 
+ 
+One you complete the 10-question survey, you will be shown a list of all of your values.  Organize this list from most important to least (top to bottom).</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2r-YL-XaT">
-                                <rect key="frame" x="59.5" y="2014" width="295" height="52"/>
-                                <color key="backgroundColor" red="0.30196078430000001" green="0.50196078430000002" blue="0.89411764709999997" alpha="1" colorSpace="deviceRGB"/>
+                                <rect key="frame" x="82" y="914" width="250" height="52"/>
+                                <color key="backgroundColor" red="0.32549019607843138" green="0.61568627450980395" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="295" id="6VC-eQ-pcG"/>
+                                    <constraint firstAttribute="width" constant="250" id="6VC-eQ-pcG"/>
                                     <constraint firstAttribute="height" constant="52" id="CwZ-Ab-I7G"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
@@ -137,114 +143,22 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                             <constraint firstItem="TeH-au-gpS" firstAttribute="top" secondItem="SK9-10-8ht" secondAttribute="bottom" constant="20" id="MvL-02-0zD"/>
                             <constraint firstItem="Y2r-YL-XaT" firstAttribute="centerX" secondItem="nBi-UA-0c6" secondAttribute="centerX" id="ibh-MQ-uWV"/>
                             <constraint firstItem="SK9-10-8ht" firstAttribute="leading" secondItem="Kw4-f0-8Zv" secondAttribute="leading" constant="17" id="paM-xy-HWZ"/>
-                            <constraint firstItem="Y2r-YL-XaT" firstAttribute="top" secondItem="TeH-au-gpS" secondAttribute="bottom" constant="99" id="rYw-hZ-rO0"/>
+                            <constraint firstItem="Y2r-YL-XaT" firstAttribute="top" secondItem="TeH-au-gpS" secondAttribute="bottom" constant="30" id="rYw-hZ-rO0"/>
                             <constraint firstItem="SK9-10-8ht" firstAttribute="top" secondItem="Kw4-f0-8Zv" secondAttribute="top" constant="22" id="zge-8t-L9O"/>
-                            <constraint firstItem="Kw4-f0-8Zv" firstAttribute="trailing" secondItem="TeH-au-gpS" secondAttribute="trailing" constant="39" id="ziK-xq-l69"/>
+                            <constraint firstItem="Kw4-f0-8Zv" firstAttribute="trailing" secondItem="TeH-au-gpS" secondAttribute="trailing" constant="20" id="ziK-xq-l69"/>
                             <constraint firstItem="Kw4-f0-8Zv" firstAttribute="trailing" secondItem="SK9-10-8ht" secondAttribute="trailing" constant="17" id="ziv-7q-F5A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kw4-f0-8Zv"/>
                     </view>
                     <navigationItem key="navigationItem" id="ApU-tX-7Bp"/>
-                    <size key="freeformSize" width="414" height="2100"/>
+                    <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="beginSurveyButton" destination="Y2r-YL-XaT" id="Sra-1x-z8f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgJ-Sr-gRo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1746" y="138"/>
-        </scene>
-        <!--Old Question Type1 View Controller-->
-        <scene sceneID="itb-iG-qwf">
-            <objects>
-                <viewController id="HcM-gQ-XXQ" customClass="OldQuestionType1ViewController" customModule="Inner_Compass" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0bg-lc-RBz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3lj-nP-Ne8">
-                                <rect key="frame" x="132" y="107" width="150" height="3"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="374" translatesAutoresizingMaskIntoConstraints="NO" id="X25-fq-9Jw">
-                                <rect key="frame" x="20" y="228" width="374" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">What are 2-3 things do you spend your time on the most, every day? You will make time for things that are really important to you and you will run out of time for things that are not.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your first thing..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1U-Vb-ey5">
-                                <rect key="frame" x="30" y="561" width="250" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your second thing..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="se6-iw-RmG">
-                                <rect key="frame" x="30" y="603" width="250" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your third thing..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMq-6n-krM">
-                                <rect key="frame" x="30" y="645" width="250" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lww-Qv-QDY">
-                                <rect key="frame" x="20" y="459" width="374" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Write down your final one to three answers in the fields below using a single word or phrase.  Click the Submit Answer button below to proceed to the next question.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Need to brainstorm? Use this field to do so.  Nothing you type here will be submitted as your answer..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vWk-ip-LBX">
-                                <rect key="frame" x="30" y="323" width="250" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. What do you spend your time on primarily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob1-KC-NQ8">
-                                <rect key="frame" x="20" y="148" width="374" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJT-GD-kcK">
-                                <rect key="frame" x="60" y="805" width="295" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.30196078431372547" green="0.50196078431372548" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Submit Answer">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="submitAnswer:" destination="HcM-gQ-XXQ" eventType="touchUpInside" id="PRR-kd-V9z"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="1HB-N7-Mde"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="YI7-e2-4hW"/>
-                    <connections>
-                        <outlet property="brainstormTextField" destination="vWk-ip-LBX" id="MVI-Ns-W2Y"/>
-                        <outlet property="firstTextField" destination="a1U-Vb-ey5" id="xYs-ZW-TKy"/>
-                        <outlet property="questionDescriptionLabel" destination="X25-fq-9Jw" id="6tR-NP-u26"/>
-                        <outlet property="questionLabel" destination="ob1-KC-NQ8" id="Kq5-4N-HiD"/>
-                        <outlet property="secondTextField" destination="se6-iw-RmG" id="lKl-Se-zVF"/>
-                        <outlet property="submitAnswerButton" destination="GJT-GD-kcK" id="6P0-nL-78w"/>
-                        <outlet property="thirdTextField" destination="NMq-6n-krM" id="rtm-2S-bMZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RHB-7L-lch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2512" y="441"/>
+            <point key="canvasLocation" x="1744.9275362318842" y="137.94642857142856"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="uwG-Qf-NvB">
@@ -254,9 +168,8 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ICT-Zo-ghQ">
-                                <rect key="frame" x="0.0" y="172" width="414" height="597"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ICT-Zo-ghQ">
+                                <rect key="frame" x="0.0" y="172" width="414" height="690"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionCell" id="8TR-FQ-gqF" userLabel="QuestionCell" customClass="Q1QuestionCell" customModule="Inner_Compass" customModuleProvider="target">
@@ -266,8 +179,8 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q1 Question  Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb3-Xs-ExJ">
-                                                    <rect key="frame" x="20" y="3" width="390" height="39"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q1 Question  Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb3-Xs-ExJ">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
@@ -286,8 +199,8 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q1 Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vx-Lq-KT5">
-                                                    <rect key="frame" x="20" y="11" width="386" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q1 Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vx-Lq-KT5">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -306,8 +219,8 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q1 Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwY-7t-wOF">
-                                                    <rect key="frame" x="20" y="11" width="398" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q1 Instructions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwY-7t-wOF">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -346,9 +259,9 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yx2-oi-aho">
-                                                    <rect key="frame" x="158" y="-1" width="99" height="46"/>
+                                                    <rect key="frame" x="147" y="-2" width="120" height="46"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.30196078430000001" green="0.50196078430000002" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.32549019607843138" green="0.61568627450980395" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                     <state key="normal" title="Next">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -359,29 +272,52 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nextButton" destination="yx2-oi-aho" id="UGn-w6-BvE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GpA-G9-eHi">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpA-G9-eHi">
                                 <rect key="frame" x="0.0" y="88" width="414" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yzG-ME-okn">
-                                        <rect key="frame" x="132" y="30" width="150" height="2"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yzG-ME-okn">
+                                        <rect key="frame" x="132" y="26" width="150" height="2"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="MEH-D4-qkA"/>
+                                            <constraint firstAttribute="height" constant="2" id="k3d-ez-Gcq"/>
+                                        </constraints>
                                     </progressView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 out of 10 completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PL-sp-0lf">
-                                        <rect key="frame" x="125" y="40" width="165" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step X of Y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PL-sp-0lf">
+                                        <rect key="frame" x="164" y="40" width="86" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="6Jd-SZ-Ykm"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.87627530099999995" green="0.96315902470000003" blue="0.94067710640000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="8PL-sp-0lf" firstAttribute="top" secondItem="yzG-ME-okn" secondAttribute="bottom" constant="12" id="2en-ZQ-BNy"/>
+                                    <constraint firstItem="yzG-ME-okn" firstAttribute="top" secondItem="GpA-G9-eHi" secondAttribute="top" constant="26" id="M5y-gd-6OB"/>
+                                    <constraint firstAttribute="height" constant="76" id="Swj-cP-9BX"/>
+                                    <constraint firstItem="yzG-ME-okn" firstAttribute="centerX" secondItem="GpA-G9-eHi" secondAttribute="centerX" id="Ywe-1w-CbQ"/>
+                                    <constraint firstItem="8PL-sp-0lf" firstAttribute="centerX" secondItem="GpA-G9-eHi" secondAttribute="centerX" id="blp-RA-9Hi"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ICT-Zo-ghQ" firstAttribute="top" secondItem="GpA-G9-eHi" secondAttribute="bottom" constant="8" id="FYR-pF-7mS"/>
+                            <constraint firstItem="GpA-G9-eHi" firstAttribute="top" secondItem="uK8-K2-QKI" secondAttribute="top" id="G4q-yW-RiI"/>
+                            <constraint firstItem="ICT-Zo-ghQ" firstAttribute="trailing" secondItem="uK8-K2-QKI" secondAttribute="trailing" id="Qc5-0L-F89"/>
+                            <constraint firstItem="GpA-G9-eHi" firstAttribute="leading" secondItem="uK8-K2-QKI" secondAttribute="leading" id="db4-Ft-vll"/>
+                            <constraint firstItem="ICT-Zo-ghQ" firstAttribute="bottom" secondItem="uK8-K2-QKI" secondAttribute="bottom" id="ijx-yE-jij"/>
+                            <constraint firstItem="ICT-Zo-ghQ" firstAttribute="leading" secondItem="uK8-K2-QKI" secondAttribute="leading" id="v9Y-M0-pnm"/>
+                            <constraint firstItem="GpA-G9-eHi" firstAttribute="trailing" secondItem="uK8-K2-QKI" secondAttribute="trailing" id="yXy-WA-2UZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uK8-K2-QKI"/>
                     </view>
                     <navigationItem key="navigationItem" id="40t-Zg-AzD"/>
@@ -394,7 +330,7 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44F-cY-2US" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2511.594202898551" y="-265.17857142857144"/>
+            <point key="canvasLocation" x="2602.898550724638" y="103.79464285714285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eJB-pb-YBT">
@@ -404,10 +340,12 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations, you completed the survey!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqc-Zq-XWz">
-                                <rect key="frame" x="50" y="235" width="323" height="114"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqc-Zq-XWz">
+                                <rect key="frame" x="20" y="235" width="374" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <string key="text">Congratulations!
+You completed the survey!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -420,6 +358,15 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                                     <segue destination="LpF-kk-BPe" kind="show" id="Kse-S2-5rh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1U-AF-cPP">
+                                <rect key="frame" x="147" y="509" width="120" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Y4A-KS-vco"/>
@@ -428,7 +375,7 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXJ-Ij-6QU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3315.9420289855075" y="-265.17857142857144"/>
+            <point key="canvasLocation" x="3389.8550724637685" y="103.79464285714285"/>
         </scene>
         <!--Values Hierarchy-->
         <scene sceneID="gxQ-Cl-Csr">
@@ -438,24 +385,30 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ht2-tY-Fb0">
-                                <rect key="frame" x="0.0" y="74" width="414" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ht2-tY-Fb0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="144"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9Z-ab-ho2">
-                                        <rect key="frame" x="8" y="69" width="2405" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Below is your hierarchy of values, based on your survey answers.  Next, refine this list by rarranging the values by drag and drop in order of importantance to you, with those on the top being the most important and those on the bottom being the least.  Then delete any on the bottom until you have 10 or less values.  </string>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9Z-ab-ho2">
+                                        <rect key="frame" x="8" y="0.0" width="398" height="144"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="144" id="77U-b8-eif"/>
+                                        </constraints>
+                                        <string key="text">Below is your hierarchy of values, based on your survey answers.  Next, refine this list by rarranging the values by drag and drop in order of importantance to you, with those on the top being the most important and those on the bottom being the least.  Then delete any on the bottom until you have 10 or less values.  These are your core values!</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="R9Z-ab-ho2" secondAttribute="bottom" id="4SX-dx-cN3"/>
+                                    <constraint firstItem="R9Z-ab-ho2" firstAttribute="top" secondItem="ht2-tY-Fb0" secondAttribute="top" id="GaX-05-Vzu"/>
+                                    <constraint firstItem="R9Z-ab-ho2" firstAttribute="leading" secondItem="ht2-tY-Fb0" secondAttribute="leading" constant="8" id="Haz-Fj-X3b"/>
+                                    <constraint firstAttribute="trailing" secondItem="R9Z-ab-ho2" secondAttribute="trailing" constant="8" id="NTo-Y9-LyB"/>
+                                </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dPC-i9-nZv">
-                                <rect key="frame" x="0.0" y="240" width="414" height="517"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dPC-i9-nZv">
+                                <rect key="frame" x="0.0" y="248" width="414" height="614"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="valueCell" textLabel="Wxv-8I-6kw" style="IBUITableViewCellStyleDefault" id="irN-iy-46p">
@@ -472,6 +425,11 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text.justify" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BnD-Ld-BOd">
+                                                    <rect key="frame" x="367" y="12" width="27" height="19"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -479,6 +437,15 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ht2-tY-Fb0" firstAttribute="leading" secondItem="Bge-vs-cjG" secondAttribute="leading" id="B4w-Cb-xui"/>
+                            <constraint firstItem="dPC-i9-nZv" firstAttribute="trailing" secondItem="Bge-vs-cjG" secondAttribute="trailing" id="COa-0e-WQv"/>
+                            <constraint firstItem="dPC-i9-nZv" firstAttribute="bottom" secondItem="Bge-vs-cjG" secondAttribute="bottom" id="RoI-ta-LZf"/>
+                            <constraint firstItem="dPC-i9-nZv" firstAttribute="leading" secondItem="Bge-vs-cjG" secondAttribute="leading" id="SPx-pR-6QC"/>
+                            <constraint firstItem="dPC-i9-nZv" firstAttribute="top" secondItem="ht2-tY-Fb0" secondAttribute="bottom" constant="16" id="VS8-Zb-CgU"/>
+                            <constraint firstItem="ht2-tY-Fb0" firstAttribute="top" secondItem="Bge-vs-cjG" secondAttribute="top" id="bGe-EC-XER"/>
+                            <constraint firstItem="ht2-tY-Fb0" firstAttribute="trailing" secondItem="Bge-vs-cjG" secondAttribute="trailing" id="nOv-DK-vf6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bge-vs-cjG"/>
                     </view>
                     <navigationItem key="navigationItem" title="Values Hierarchy" id="Ap2-wd-Kqx">
@@ -494,7 +461,7 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmg-6W-Bx5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4105.7971014492759" y="-265.17857142857144"/>
+            <point key="canvasLocation" x="4179.7101449275369" y="103.79464285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W5G-7F-QsX">
@@ -512,10 +479,11 @@ To do this, you will take a short survey of 15 questions. In each of these quest
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A98-mp-gYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+            <point key="canvasLocation" x="130" y="104"/>
         </scene>
     </scenes>
     <resources>
         <image name="compass-logo" width="640" height="640"/>
+        <image name="text.justify" catalog="system" width="128" height="100"/>
     </resources>
 </document>

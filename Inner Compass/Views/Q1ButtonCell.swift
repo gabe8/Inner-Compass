@@ -15,6 +15,8 @@ protocol Q1SubmitButtonCellDelegate {
 class Q1ButtonCell: UITableViewCell {
     var q1ButtonCellDelegate: Q1SubmitButtonCellDelegate?
     
+    @IBOutlet weak var nextButton: UIButton!
+    
     @IBAction func q1ButtonPressed(_ sender: UIButton) {
         q1ButtonCellDelegate?.q1ButtonPressed()
     }
@@ -23,6 +25,7 @@ class Q1ButtonCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        nextButton.layer.cornerRadius = 25
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

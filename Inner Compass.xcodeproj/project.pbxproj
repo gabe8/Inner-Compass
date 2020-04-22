@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F93DA22240B79B4001DDDAB /* TGSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F93DA21240B79B4001DDDAB /* TGSurveyViewController.swift */; };
-		5F93DA24240B79CB001DDDAB /* TGSurveyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F93DA23240B79CB001DDDAB /* TGSurveyViewController.storyboard */; };
-		5F93DA26240B7BD3001DDDAB /* TGQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F93DA25240B7BD3001DDDAB /* TGQuestionCell.swift */; };
-		5F93DA28240B7BE2001DDDAB /* TGDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F93DA27240B7BE2001DDDAB /* TGDescriptionCell.swift */; };
-		5F93DA2A240B7BEF001DDDAB /* TGAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F93DA29240B7BEF001DDDAB /* TGAnswerCell.swift */; };
-		5F93DA2E240B8009001DDDAB /* TGSubmitButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F93DA2D240B8009001DDDAB /* TGSubmitButtonCell.swift */; };
 		602AB39F23DFC1E30062C1FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602AB39E23DFC1E30062C1FD /* AppDelegate.swift */; };
 		602AB3A123DFC1E30062C1FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602AB3A023DFC1E30062C1FD /* SceneDelegate.swift */; };
 		602AB3A323DFC1E30062C1FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602AB3A223DFC1E30062C1FD /* ViewController.swift */; };
@@ -27,19 +21,12 @@
 		60628A9A23E101A0002A615E /* SurveyStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60628A9923E101A0002A615E /* SurveyStartViewController.swift */; };
 		60A3B4CA243D18EC00537C0D /* ValuesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A3B4C9243D18EC00537C0D /* ValuesListViewController.swift */; };
 		60B08C6C2434FB0E003BEC9D /* UserDataModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B08C6B2434FB0E003BEC9D /* UserDataModelController.swift */; };
-		60BA465323E52BC1002D5D1B /* OldQuestionType1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BA465223E52BC1002D5D1B /* OldQuestionType1ViewController.swift */; };
 		60CCCCFC23EA4415007A691C /* ContentModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCCCFB23EA4415007A691C /* ContentModelController.swift */; };
 		60CCCCFE23EA457B007A691C /* QuestionType1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCCCFD23EA457B007A691C /* QuestionType1.swift */; };
 		60DB56F02412DEAB003D8DF7 /* Q1ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB56EF2412DEAB003D8DF7 /* Q1ButtonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5F93DA21240B79B4001DDDAB /* TGSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGSurveyViewController.swift; sourceTree = "<group>"; };
-		5F93DA23240B79CB001DDDAB /* TGSurveyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TGSurveyViewController.storyboard; sourceTree = "<group>"; };
-		5F93DA25240B7BD3001DDDAB /* TGQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGQuestionCell.swift; sourceTree = "<group>"; };
-		5F93DA27240B7BE2001DDDAB /* TGDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGDescriptionCell.swift; sourceTree = "<group>"; };
-		5F93DA29240B7BEF001DDDAB /* TGAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGAnswerCell.swift; sourceTree = "<group>"; };
-		5F93DA2D240B8009001DDDAB /* TGSubmitButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGSubmitButtonCell.swift; sourceTree = "<group>"; };
 		602AB39B23DFC1E30062C1FD /* Inner Compass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inner Compass.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		602AB39E23DFC1E30062C1FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		602AB3A023DFC1E30062C1FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +43,6 @@
 		60628A9923E101A0002A615E /* SurveyStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStartViewController.swift; sourceTree = "<group>"; };
 		60A3B4C9243D18EC00537C0D /* ValuesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuesListViewController.swift; sourceTree = "<group>"; };
 		60B08C6B2434FB0E003BEC9D /* UserDataModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModelController.swift; sourceTree = "<group>"; };
-		60BA465223E52BC1002D5D1B /* OldQuestionType1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldQuestionType1ViewController.swift; sourceTree = "<group>"; };
 		60CCCCFB23EA4415007A691C /* ContentModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModelController.swift; sourceTree = "<group>"; };
 		60CCCCFD23EA457B007A691C /* QuestionType1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionType1.swift; sourceTree = "<group>"; };
 		60DB56EF2412DEAB003D8DF7 /* Q1ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1ButtonCell.swift; sourceTree = "<group>"; };
@@ -73,19 +59,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F93DA20240B7989001DDDAB /* TG Guidance */ = {
-			isa = PBXGroup;
-			children = (
-				5F93DA23240B79CB001DDDAB /* TGSurveyViewController.storyboard */,
-				5F93DA21240B79B4001DDDAB /* TGSurveyViewController.swift */,
-				5F93DA25240B7BD3001DDDAB /* TGQuestionCell.swift */,
-				5F93DA27240B7BE2001DDDAB /* TGDescriptionCell.swift */,
-				5F93DA29240B7BEF001DDDAB /* TGAnswerCell.swift */,
-				5F93DA2D240B8009001DDDAB /* TGSubmitButtonCell.swift */,
-			);
-			path = "TG Guidance";
-			sourceTree = "<group>";
-		};
 		602AB39223DFC1E30062C1FD = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +83,6 @@
 				60ECC8B923E633E600E66711 /* Models */,
 				60ECC8B723E6325A00E66711 /* Views */,
 				60ECC8B823E633BF00E66711 /* Controllers */,
-				5F93DA20240B7989001DDDAB /* TG Guidance */,
 				602AB3A723DFC1E50062C1FD /* Assets.xcassets */,
 				602AB3A923DFC1E50062C1FD /* LaunchScreen.storyboard */,
 				602AB3AC23DFC1E50062C1FD /* Info.plist */,
@@ -136,7 +108,6 @@
 			children = (
 				602AB3A223DFC1E30062C1FD /* ViewController.swift */,
 				60628A9923E101A0002A615E /* SurveyStartViewController.swift */,
-				60BA465223E52BC1002D5D1B /* OldQuestionType1ViewController.swift */,
 				603C355723F8E66A00FE6A8D /* QuestionViewController.swift */,
 				60A3B4C9243D18EC00537C0D /* ValuesListViewController.swift */,
 			);
@@ -211,7 +182,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F93DA24240B79CB001DDDAB /* TGSurveyViewController.storyboard in Resources */,
 				602AB3AB23DFC1E50062C1FD /* LaunchScreen.storyboard in Resources */,
 				602AB3A823DFC1E50062C1FD /* Assets.xcassets in Resources */,
 				602AB3A623DFC1E30062C1FD /* Main.storyboard in Resources */,
@@ -235,16 +205,10 @@
 				603C355E23FC8AE700FE6A8D /* Q1DescriptionCell.swift in Sources */,
 				60A3B4CA243D18EC00537C0D /* ValuesListViewController.swift in Sources */,
 				6031476023FF45B000D31302 /* Q1TextFieldCell.swift in Sources */,
-				5F93DA2A240B7BEF001DDDAB /* TGAnswerCell.swift in Sources */,
 				602AB39F23DFC1E30062C1FD /* AppDelegate.swift in Sources */,
-				60BA465323E52BC1002D5D1B /* OldQuestionType1ViewController.swift in Sources */,
-				5F93DA26240B7BD3001DDDAB /* TGQuestionCell.swift in Sources */,
-				5F93DA2E240B8009001DDDAB /* TGSubmitButtonCell.swift in Sources */,
 				60DB56F02412DEAB003D8DF7 /* Q1ButtonCell.swift in Sources */,
 				603C356023FCCA0600FE6A8D /* Q1InstructionsCell.swift in Sources */,
 				602AB3A123DFC1E30062C1FD /* SceneDelegate.swift in Sources */,
-				5F93DA28240B7BE2001DDDAB /* TGDescriptionCell.swift in Sources */,
-				5F93DA22240B79B4001DDDAB /* TGSurveyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AWSJQ6896N;
+				DEVELOPMENT_TEAM = XGPQPP8433;
 				INFOPLIST_FILE = "Inner Compass/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,7 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AWSJQ6896N;
+				DEVELOPMENT_TEAM = XGPQPP8433;
 				INFOPLIST_FILE = "Inner Compass/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
