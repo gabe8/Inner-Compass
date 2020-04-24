@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iPg-ue-NKc">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Inner_Compass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m47-dM-ckm">
-                                <rect key="frame" x="82" y="653" width="250" height="52"/>
+                                <rect key="frame" x="62.666666666666657" y="653" width="249.99999999999997" height="52"/>
                                 <color key="backgroundColor" red="0.32549019607843138" green="0.61568627450980395" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="PX0-Rj-QMY"/>
@@ -32,19 +32,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inner Compass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ng-lH-bpy">
-                                <rect key="frame" x="62.5" y="399" width="289" height="54"/>
+                                <rect key="frame" x="43" y="399" width="289" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover Your Core Values" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iH-P6-x7U">
-                                <rect key="frame" x="38.5" y="461" width="337.5" height="36"/>
+                                <rect key="frame" x="19" y="461" width="337.33333333333331" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass-logo" translatesAutoresizingMaskIntoConstraints="NO" id="E40-Yx-bFZ">
-                                <rect key="frame" x="85.5" y="133" width="243" height="230"/>
+                                <rect key="frame" x="66" y="133" width="243" height="230"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="243" id="2ah-BT-eTa"/>
                                     <constraint firstAttribute="height" constant="230" id="cjd-0x-Qac"/>
@@ -74,45 +72,35 @@
             </objects>
             <point key="canvasLocation" x="942" y="109"/>
         </scene>
-        <!--TGSurveyViewController-->
-        <scene sceneID="RCe-ZT-854">
-            <objects>
-                <viewControllerPlaceholder storyboardName="TGSurveyViewController" id="2MM-be-ens" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="hfK-Hi-6GF"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WK2-pC-vLX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="914" y="538"/>
-        </scene>
         <!--Survey Start View Controller-->
         <scene sceneID="1Lx-g1-ytK">
             <objects>
                 <viewController id="lvu-ov-SQy" customClass="SurveyStartViewController" customModule="Inner_Compass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nBi-UA-0c6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How To Proceed:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SK9-10-8ht">
-                                <rect key="frame" x="17" y="110" width="380" height="36"/>
+                                <rect key="frame" x="16" y="88" width="343" height="54"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="ShC-B0-pjg"/>
+                                    <constraint firstAttribute="height" constant="54" id="xLj-eK-5D9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeH-au-gpS">
-                                <rect key="frame" x="20" y="166" width="377" height="834"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="TeH-au-gpS">
+                                <rect key="frame" x="16" y="150" width="343" height="542"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <mutableString key="text">This app will enable you to discover, identify and store your list of personal values.  Your values are simply things that are important to you in your life, and govern your behavior, decisions, thinking, and how you live your life.  Knowing your true authentic values and their order of importance, empowers you to make better decisions and live a more happy and fulfilling life with greater self-awareness, purpose and integrity.  Here’s how to use this app:
 
-- Answer the following short 10-question survey, and take as much time as you want for your answers.
+• Answer the following short 10-question survey, and take as much time as you want for your answers.
 
-- Try to make your answers concise as either a single word or short phrase, so for example “Health”, “Happiness and Joy”, etc.  This will help you to make a concise list for easy checking.
+• Try to make your answers concise as either a single word or short phrase, so for example “Health”, “Happiness and Joy”, etc.  This will help you to make a concise list for easy checking.
 
-- You can answer with one value, two or three for a given question, there is no requirement for each question.
+• You can answer with one value, two or three for a given question, there is no requirement for each question.
 
-- If you don’t want to answer a question, you can skip it by pressing the “next” button, but we highly recommend you answer all of them to help you “dig deeper”. 
+• If you don’t want to answer a question, you can skip it by pressing the “next” button, but we highly recommend you answer all of them to help you “dig deeper”. 
  
 One you complete the 10-question survey, you will be shown a list of all of your values.  Organize this list from most important to least (top to bottom).</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -120,11 +108,10 @@ One you complete the 10-question survey, you will be shown a list of all of your
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2r-YL-XaT">
-                                <rect key="frame" x="82" y="914" width="250" height="52"/>
+                                <rect key="frame" x="62" y="710" width="251" height="52"/>
                                 <color key="backgroundColor" red="0.32549019607843138" green="0.61568627450980395" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="6VC-eQ-pcG"/>
-                                    <constraint firstAttribute="height" constant="52" id="CwZ-Ab-I7G"/>
+                                    <constraint firstAttribute="height" constant="52" id="khf-bX-mpl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -138,51 +125,52 @@ One you complete the 10-question survey, you will be shown a list of all of your
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="TeH-au-gpS" firstAttribute="leading" secondItem="Kw4-f0-8Zv" secondAttribute="leading" constant="20" id="2vu-h1-OtQ"/>
-                            <constraint firstItem="Y2r-YL-XaT" firstAttribute="bottom" secondItem="Kw4-f0-8Zv" secondAttribute="bottom" id="JGb-Mg-zMc"/>
-                            <constraint firstItem="TeH-au-gpS" firstAttribute="top" secondItem="SK9-10-8ht" secondAttribute="bottom" constant="20" id="MvL-02-0zD"/>
-                            <constraint firstItem="Y2r-YL-XaT" firstAttribute="centerX" secondItem="nBi-UA-0c6" secondAttribute="centerX" id="ibh-MQ-uWV"/>
-                            <constraint firstItem="SK9-10-8ht" firstAttribute="leading" secondItem="Kw4-f0-8Zv" secondAttribute="leading" constant="17" id="paM-xy-HWZ"/>
-                            <constraint firstItem="Y2r-YL-XaT" firstAttribute="top" secondItem="TeH-au-gpS" secondAttribute="bottom" constant="30" id="rYw-hZ-rO0"/>
-                            <constraint firstItem="SK9-10-8ht" firstAttribute="top" secondItem="Kw4-f0-8Zv" secondAttribute="top" constant="22" id="zge-8t-L9O"/>
-                            <constraint firstItem="Kw4-f0-8Zv" firstAttribute="trailing" secondItem="TeH-au-gpS" secondAttribute="trailing" constant="20" id="ziK-xq-l69"/>
-                            <constraint firstItem="Kw4-f0-8Zv" firstAttribute="trailing" secondItem="SK9-10-8ht" secondAttribute="trailing" constant="17" id="ziv-7q-F5A"/>
+                            <constraint firstItem="TeH-au-gpS" firstAttribute="top" secondItem="SK9-10-8ht" secondAttribute="bottom" constant="8" id="5Ft-ch-b1X"/>
+                            <constraint firstItem="Y2r-YL-XaT" firstAttribute="leading" secondItem="Kw4-f0-8Zv" secondAttribute="leading" constant="62" id="6dS-b3-6se"/>
+                            <constraint firstItem="TeH-au-gpS" firstAttribute="centerX" secondItem="Y2r-YL-XaT" secondAttribute="centerX" id="8wB-hR-env"/>
+                            <constraint firstItem="Kw4-f0-8Zv" firstAttribute="bottom" secondItem="Y2r-YL-XaT" secondAttribute="bottom" constant="16" id="CqJ-En-rpA"/>
+                            <constraint firstItem="Y2r-YL-XaT" firstAttribute="top" secondItem="TeH-au-gpS" secondAttribute="bottom" constant="18" id="FD8-bS-Coj"/>
+                            <constraint firstItem="TeH-au-gpS" firstAttribute="leading" secondItem="nBi-UA-0c6" secondAttribute="leadingMargin" id="ORP-JP-qHN"/>
+                            <constraint firstItem="SK9-10-8ht" firstAttribute="trailing" secondItem="nBi-UA-0c6" secondAttribute="trailingMargin" id="cYb-Rj-ZkE"/>
+                            <constraint firstItem="SK9-10-8ht" firstAttribute="trailing" secondItem="TeH-au-gpS" secondAttribute="trailing" id="dll-Xu-A6M"/>
+                            <constraint firstItem="SK9-10-8ht" firstAttribute="centerX" secondItem="TeH-au-gpS" secondAttribute="centerX" id="qEY-aI-r56"/>
+                            <constraint firstItem="SK9-10-8ht" firstAttribute="top" secondItem="Kw4-f0-8Zv" secondAttribute="top" id="qpi-Yq-cvk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kw4-f0-8Zv"/>
                     </view>
                     <navigationItem key="navigationItem" id="ApU-tX-7Bp"/>
-                    <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="beginSurveyButton" destination="Y2r-YL-XaT" id="Sra-1x-z8f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgJ-Sr-gRo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744.9275362318842" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1748" y="102.70935960591133"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="uwG-Qf-NvB">
             <objects>
                 <viewController storyboardIdentifier="QuestionViewController" id="FqH-xl-2X8" customClass="QuestionViewController" customModule="Inner_Compass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qse-MA-gNa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ICT-Zo-ghQ">
-                                <rect key="frame" x="0.0" y="172" width="414" height="690"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ICT-Zo-ghQ">
+                                <rect key="frame" x="0.0" y="147" width="375" height="615"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionCell" id="8TR-FQ-gqF" userLabel="QuestionCell" customClass="Q1QuestionCell" customModule="Inner_Compass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8TR-FQ-gqF" id="ULB-7c-K3P">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q1 Question  Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb3-Xs-ExJ">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="44"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="27.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -193,14 +181,14 @@ One you complete the 10-question survey, you will be shown a list of all of your
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DescriptionCell" id="rJ5-9S-cd9" userLabel="DescriptionCell" customClass="Q1DescriptionCell" customModule="Inner_Compass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rJ5-9S-cd9" id="sOe-Hv-MH8">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q1 Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vx-Lq-KT5">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="44"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -213,17 +201,17 @@ One you complete the 10-question survey, you will be shown a list of all of your
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InstructionsCell" id="YE3-uK-5LP" userLabel="InstructionsCell" customClass="Q1InstructionsCell" customModule="Inner_Compass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="116" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="116" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YE3-uK-5LP" id="cbf-Lw-Jef">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q1 Instructions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwY-7t-wOF">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="44"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -233,14 +221,14 @@ One you complete the 10-question survey, you will be shown a list of all of your
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnswerCell" id="cbU-oL-ffk" userLabel="AnswerCell" customClass="Q1TextFieldCell" customModule="Inner_Compass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="160" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="160" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cbU-oL-ffk" id="KXK-Th-3Tk">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2rT-Mr-2Cl">
-                                                    <rect key="frame" x="8" y="5" width="341" height="34"/>
+                                                    <rect key="frame" x="8" y="5" width="352" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -252,14 +240,14 @@ One you complete the 10-question survey, you will be shown a list of all of your
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ButtonCell" id="3bs-It-S1v" userLabel="ButtonCell" customClass="Q1ButtonCell" customModule="Inner_Compass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="204" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="204" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3bs-It-S1v" id="GLk-ql-tDA">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yx2-oi-aho">
-                                                    <rect key="frame" x="147" y="-2" width="120" height="46"/>
+                                                    <rect key="frame" x="127.66666666666669" y="0.0" width="120" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.32549019607843138" green="0.61568627450980395" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
@@ -278,46 +266,26 @@ One you complete the 10-question survey, you will be shown a list of all of your
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpA-G9-eHi">
-                                <rect key="frame" x="0.0" y="88" width="414" height="76"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GpA-G9-eHi">
+                                <rect key="frame" x="0.0" y="88" width="375" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yzG-ME-okn">
-                                        <rect key="frame" x="132" y="26" width="150" height="2"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="MEH-D4-qkA"/>
-                                            <constraint firstAttribute="height" constant="2" id="k3d-ez-Gcq"/>
-                                        </constraints>
-                                    </progressView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step X of Y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PL-sp-0lf">
-                                        <rect key="frame" x="164" y="40" width="86" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="6Jd-SZ-Ykm"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step X of Y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PL-sp-0lf">
+                                        <rect key="frame" x="144.66666666666666" y="22" width="86" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yzG-ME-okn">
+                                        <rect key="frame" x="112.66666666666669" y="12" width="150" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </progressView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="8PL-sp-0lf" firstAttribute="top" secondItem="yzG-ME-okn" secondAttribute="bottom" constant="12" id="2en-ZQ-BNy"/>
-                                    <constraint firstItem="yzG-ME-okn" firstAttribute="top" secondItem="GpA-G9-eHi" secondAttribute="top" constant="26" id="M5y-gd-6OB"/>
-                                    <constraint firstAttribute="height" constant="76" id="Swj-cP-9BX"/>
-                                    <constraint firstItem="yzG-ME-okn" firstAttribute="centerX" secondItem="GpA-G9-eHi" secondAttribute="centerX" id="Ywe-1w-CbQ"/>
-                                    <constraint firstItem="8PL-sp-0lf" firstAttribute="centerX" secondItem="GpA-G9-eHi" secondAttribute="centerX" id="blp-RA-9Hi"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="ICT-Zo-ghQ" firstAttribute="top" secondItem="GpA-G9-eHi" secondAttribute="bottom" constant="8" id="FYR-pF-7mS"/>
-                            <constraint firstItem="GpA-G9-eHi" firstAttribute="top" secondItem="uK8-K2-QKI" secondAttribute="top" id="G4q-yW-RiI"/>
-                            <constraint firstItem="ICT-Zo-ghQ" firstAttribute="trailing" secondItem="uK8-K2-QKI" secondAttribute="trailing" id="Qc5-0L-F89"/>
-                            <constraint firstItem="GpA-G9-eHi" firstAttribute="leading" secondItem="uK8-K2-QKI" secondAttribute="leading" id="db4-Ft-vll"/>
-                            <constraint firstItem="ICT-Zo-ghQ" firstAttribute="bottom" secondItem="uK8-K2-QKI" secondAttribute="bottom" id="ijx-yE-jij"/>
-                            <constraint firstItem="ICT-Zo-ghQ" firstAttribute="leading" secondItem="uK8-K2-QKI" secondAttribute="leading" id="v9Y-M0-pnm"/>
-                            <constraint firstItem="GpA-G9-eHi" firstAttribute="trailing" secondItem="uK8-K2-QKI" secondAttribute="trailing" id="yXy-WA-2UZ"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uK8-K2-QKI"/>
                     </view>
                     <navigationItem key="navigationItem" id="40t-Zg-AzD"/>
@@ -330,125 +298,143 @@ One you complete the 10-question survey, you will be shown a list of all of your
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44F-cY-2US" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2602.898550724638" y="103.79464285714285"/>
+            <point key="canvasLocation" x="2602.4000000000001" y="103.44827586206897"/>
         </scene>
-        <!--View Controller-->
+        <!--Survey Completed View Controller-->
         <scene sceneID="eJB-pb-YBT">
             <objects>
-                <viewController id="3aw-7z-4Hf" sceneMemberID="viewController">
+                <viewController id="3aw-7z-4Hf" customClass="SurveyCompletedViewController" customModule="Inner_Compass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yyK-cf-onu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqc-Zq-XWz">
-                                <rect key="frame" x="20" y="235" width="374" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqc-Zq-XWz">
+                                <rect key="frame" x="16" y="348" width="343" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="gbu-wT-Ygz"/>
+                                </constraints>
                                 <string key="text">Congratulations!
 You completed the survey!</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltT-dN-k9H">
-                                <rect key="frame" x="34" y="357" width="349" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Click here to finalize your values list"/>
-                                <connections>
-                                    <segue destination="LpF-kk-BPe" kind="show" id="Kse-S2-5rh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1U-AF-cPP">
-                                <rect key="frame" x="147" y="509" width="120" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now let's finalize your list of core values..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLG-g6-bSR">
+                                <rect key="frame" x="16" y="470" width="343" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="sD7-SK-xsl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="a4g-Cd-gIV">
+                                <rect key="frame" x="78" y="100" width="219" height="219"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1U-AF-cPP">
+                                <rect key="frame" x="147" y="637" width="81" height="46"/>
                                 <color key="backgroundColor" red="0.32549019610000002" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="yag-SJ-qMt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="LpF-kk-BPe" kind="show" id="HD3-eT-7yI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="J1U-AF-cPP" firstAttribute="top" secondItem="iLG-g6-bSR" secondAttribute="bottom" constant="95" id="47d-ng-sip"/>
+                            <constraint firstItem="a4g-Cd-gIV" firstAttribute="top" secondItem="Y4A-KS-vco" secondAttribute="top" constant="12" id="CXm-cO-eZy"/>
+                            <constraint firstItem="Kqc-Zq-XWz" firstAttribute="leading" secondItem="yyK-cf-onu" secondAttribute="leadingMargin" id="FAK-40-2of"/>
+                            <constraint firstItem="J1U-AF-cPP" firstAttribute="leading" secondItem="Y4A-KS-vco" secondAttribute="leading" constant="147" id="JAE-6f-M6P"/>
+                            <constraint firstItem="Kqc-Zq-XWz" firstAttribute="leading" secondItem="iLG-g6-bSR" secondAttribute="leading" id="JqR-WY-FUY"/>
+                            <constraint firstItem="Y4A-KS-vco" firstAttribute="bottom" secondItem="J1U-AF-cPP" secondAttribute="bottom" constant="95" id="Knc-Lp-7I5"/>
+                            <constraint firstItem="Kqc-Zq-XWz" firstAttribute="top" secondItem="a4g-Cd-gIV" secondAttribute="bottom" constant="29" id="ZcX-HN-8bJ"/>
+                            <constraint firstItem="iLG-g6-bSR" firstAttribute="top" secondItem="Kqc-Zq-XWz" secondAttribute="bottom" constant="8" id="hQO-6v-gNp"/>
+                            <constraint firstItem="Kqc-Zq-XWz" firstAttribute="trailing" secondItem="yyK-cf-onu" secondAttribute="trailingMargin" id="jHJ-VA-nvQ"/>
+                            <constraint firstItem="a4g-Cd-gIV" firstAttribute="leading" secondItem="Y4A-KS-vco" secondAttribute="leading" constant="78" id="jx5-ze-73a"/>
+                            <constraint firstItem="Kqc-Zq-XWz" firstAttribute="trailing" secondItem="iLG-g6-bSR" secondAttribute="trailing" id="lYI-UT-WCE"/>
+                            <constraint firstItem="a4g-Cd-gIV" firstAttribute="centerX" secondItem="Kqc-Zq-XWz" secondAttribute="centerX" id="vBu-cW-x20"/>
+                            <constraint firstItem="iLG-g6-bSR" firstAttribute="centerX" secondItem="J1U-AF-cPP" secondAttribute="centerX" id="vSb-1I-Ret"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Y4A-KS-vco"/>
                     </view>
                     <navigationItem key="navigationItem" id="yuS-U2-rGg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXJ-Ij-6QU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3389.8550724637685" y="103.79464285714285"/>
+            <point key="canvasLocation" x="3389.5999999999999" y="103.44827586206897"/>
         </scene>
-        <!--Values Hierarchy-->
+        <!--Core Values List-->
         <scene sceneID="gxQ-Cl-Csr">
             <objects>
                 <viewController id="LpF-kk-BPe" customClass="ValuesListViewController" customModule="Inner_Compass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AO7-S4-icJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ht2-tY-Fb0">
-                                <rect key="frame" x="0.0" y="88" width="414" height="144"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9Z-ab-ho2">
-                                        <rect key="frame" x="8" y="0.0" width="398" height="144"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="144" id="77U-b8-eif"/>
-                                        </constraints>
-                                        <string key="text">Below is your hierarchy of values, based on your survey answers.  Next, refine this list by rarranging the values by drag and drop in order of importantance to you, with those on the top being the most important and those on the bottom being the least.  Then delete any on the bottom until you have 10 or less values.  These are your core values!</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="R9Z-ab-ho2" secondAttribute="bottom" id="4SX-dx-cN3"/>
-                                    <constraint firstItem="R9Z-ab-ho2" firstAttribute="top" secondItem="ht2-tY-Fb0" secondAttribute="top" id="GaX-05-Vzu"/>
-                                    <constraint firstItem="R9Z-ab-ho2" firstAttribute="leading" secondItem="ht2-tY-Fb0" secondAttribute="leading" constant="8" id="Haz-Fj-X3b"/>
-                                    <constraint firstAttribute="trailing" secondItem="R9Z-ab-ho2" secondAttribute="trailing" constant="8" id="NTo-Y9-LyB"/>
-                                </constraints>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dPC-i9-nZv">
-                                <rect key="frame" x="0.0" y="248" width="414" height="614"/>
+                                <rect key="frame" x="0.0" y="316" width="375" height="462"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="valueCell" textLabel="Wxv-8I-6kw" style="IBUITableViewCellStyleDefault" id="irN-iy-46p">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="irN-iy-46p" id="EvZ-lp-jQ1">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wxv-8I-6kw">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text.justify" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BnD-Ld-BOd">
-                                                    <rect key="frame" x="367" y="12" width="27" height="19"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text.justify" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Lyx-rB-BH0">
+                                                    <rect key="frame" x="320" y="2" width="40" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9Z-ab-ho2">
+                                <rect key="frame" x="16" y="88" width="343" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="5Lr-Bb-T0n"/>
+                                    <constraint firstAttribute="width" constant="343" id="6YD-qt-bAc"/>
+                                </constraints>
+                                <string key="text">Below is a list of the values you recorded.  Now do the following: 
+
+1. Rearrange this list from most important values (top), to least important (bottom).  
+
+2. Edit them to be more clear and conscise single words or phrases.  Then delete your least important values until you have 10 in total or less.  These are your core values!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ht2-tY-Fb0" firstAttribute="leading" secondItem="Bge-vs-cjG" secondAttribute="leading" id="B4w-Cb-xui"/>
-                            <constraint firstItem="dPC-i9-nZv" firstAttribute="trailing" secondItem="Bge-vs-cjG" secondAttribute="trailing" id="COa-0e-WQv"/>
-                            <constraint firstItem="dPC-i9-nZv" firstAttribute="bottom" secondItem="Bge-vs-cjG" secondAttribute="bottom" id="RoI-ta-LZf"/>
-                            <constraint firstItem="dPC-i9-nZv" firstAttribute="leading" secondItem="Bge-vs-cjG" secondAttribute="leading" id="SPx-pR-6QC"/>
-                            <constraint firstItem="dPC-i9-nZv" firstAttribute="top" secondItem="ht2-tY-Fb0" secondAttribute="bottom" constant="16" id="VS8-Zb-CgU"/>
-                            <constraint firstItem="ht2-tY-Fb0" firstAttribute="top" secondItem="Bge-vs-cjG" secondAttribute="top" id="bGe-EC-XER"/>
-                            <constraint firstItem="ht2-tY-Fb0" firstAttribute="trailing" secondItem="Bge-vs-cjG" secondAttribute="trailing" id="nOv-DK-vf6"/>
+                            <constraint firstItem="dPC-i9-nZv" firstAttribute="top" secondItem="R9Z-ab-ho2" secondAttribute="bottom" constant="8" id="1LC-t0-qqi"/>
+                            <constraint firstItem="R9Z-ab-ho2" firstAttribute="top" secondItem="Bge-vs-cjG" secondAttribute="top" id="DSs-z3-hTf"/>
+                            <constraint firstItem="dPC-i9-nZv" firstAttribute="top" secondItem="R9Z-ab-ho2" secondAttribute="bottom" constant="8" id="O31-nX-uQd"/>
+                            <constraint firstItem="dPC-i9-nZv" firstAttribute="bottom" secondItem="Bge-vs-cjG" secondAttribute="bottom" id="R5a-IH-pqb"/>
+                            <constraint firstItem="dPC-i9-nZv" firstAttribute="leading" secondItem="Bge-vs-cjG" secondAttribute="leading" id="fTc-05-fkF"/>
+                            <constraint firstItem="R9Z-ab-ho2" firstAttribute="centerX" secondItem="AO7-S4-icJ" secondAttribute="centerX" id="hCa-vr-dwh"/>
+                            <constraint firstItem="dPC-i9-nZv" firstAttribute="trailing" secondItem="Bge-vs-cjG" secondAttribute="trailing" id="xFB-q5-Kc5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bge-vs-cjG"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Values Hierarchy" id="Ap2-wd-Kqx">
+                    <navigationItem key="navigationItem" title="Core Values List" id="Ap2-wd-Kqx">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zXG-R1-srW">
                             <connections>
                                 <action selector="onAddTapped:" destination="LpF-kk-BPe" id="yvB-9Y-deD"/>
@@ -461,7 +447,7 @@ You completed the survey!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmg-6W-Bx5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4179.7101449275369" y="103.79464285714285"/>
+            <point key="canvasLocation" x="4178.3999999999996" y="103.44827586206897"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W5G-7F-QsX">
@@ -469,7 +455,7 @@ You completed the survey!</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iPg-ue-NKc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bxr-E2-mKn">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -483,6 +469,7 @@ You completed the survey!</string>
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark" width="64" height="64"/>
         <image name="compass-logo" width="640" height="640"/>
         <image name="text.justify" catalog="system" width="128" height="100"/>
     </resources>

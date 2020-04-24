@@ -72,11 +72,6 @@ class ValuesListViewController: UIViewController {
         tableView.dragDelegate = self
         tableView.dropDelegate = self
         
-        // Enables editing mode for the table view
-        //tableView.isEditing = true
-        
-        // Allows someone to select a row during editing mode
-        //tableView.allowsSelectionDuringEditing = true
         
         // Take the stored array of survey answers, then generate new array without blanks for values hiearchy list
         if let valuesArray = dataModel?.storedUserData() {

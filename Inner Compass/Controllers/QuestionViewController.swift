@@ -15,6 +15,9 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var progressBarLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var tableViewBottomConstraint: NSLayoutConstraint!
+    // tableViewBottonConstraint.constand = 100 // see how that works, then align, etc
+    
     // Declare the content and data models to be used by the view controller
     // as well as the question number to keepe track of the viewcontroller instance
     var contentModel: ContentModelController?
@@ -33,7 +36,7 @@ class QuestionViewController: UIViewController {
         
         // Set progress bar's progress
         let progressBarProgress = Float(questionNumber)/10
-        progressBar.progress = progressBarProgress
+        progressBar.progress = progressBarProgress + 0.1
         
         let questionCountProgress = questionNumber + 1
         progressBarLabel.text = "Step \(questionCountProgress) of 10"
@@ -43,10 +46,32 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.dataSource = self
-        
         contentModel = ContentModelController(questionNumber: questionNumber)
-        dataModel = UserDataModelController() 
+        dataModel = UserDataModelController()
+        
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        
+        
     }
+    
+    @objc func adjustForKeyboard(notification: Notification) {
+        guard let keyboardValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
+        
+        let keyboardScreenEndFrame = keyboardValue.cgRectValue
+        let keyboardViewEndFrame = view.convert(keyboardScreenEndFrame, from: view.window)
+        
+        if notification.name == UIResponder.keyboardWillHideNotification {
+            tableView.contentInset = .zero
+        } else {
+            let offset = keyboardViewEndFrame.height - view.safeAreaInsets.bottom
+            //tableViewBottomConstraint.constant = offset
+            tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: offset, right: 0)
+        }
+        tableView.scrollIndicatorInsets = tableView.contentInset
+    }
+    
 }
 
 extension QuestionViewController: UITableViewDataSource {
@@ -94,7 +119,7 @@ extension QuestionViewController: UITableViewDataSource {
         // This is where we would populate the cells with the correct data for the current question.
         // This will require subclassing UITableViewCell for each of our prototypes, in order to have
         // IBOutlets to the labels or textfields within the cell, depending on which prototype it is.
-    }
+    }    
 }
 extension QuestionViewController: Q1TextFieldCellDelegate {
     func getAnswer(number: Int) -> String? {
@@ -122,9 +147,10 @@ extension QuestionViewController: Q1TextFieldCellDelegate {
         }
         
         let indexPath = IndexPath(row: fieldNumber + 3, section: 0)
-        tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
         if let cell = tableView.cellForRow(at: indexPath) as? Q1TextFieldCell {
             cell.answerTextField.becomeFirstResponder()
+            
         }
     }
 }

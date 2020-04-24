@@ -13,8 +13,8 @@ struct ContentModelController {
     
     let type1Questions = [
         QuestionType1(
-            question: "1. What is most important to you?",
-            description: "Write down the first three things that come to your mind.  Another way to think about this is: What have been the most important things in your life? Beyond your basic human needs, what must you have in your life to experience fulfillment?"
+            question: "1. What is most important to you?\n",
+            description: "Write down the first three things that come to your mind. Another way to think about this is: What have been the most important things in your life? Beyond your basic human needs, what must you have in your life to experience fulfillment?"
         ),
         QuestionType1(
             question: "2. What do you spend your time on primarily?",
@@ -30,7 +30,7 @@ struct ContentModelController {
         ),
         QuestionType1(
             question: "5. Who or what inspires you the most?  What values or qualities do they represent to you?",
-            description: "What qualities or values are shared by people is common to those individuals, insights, experiences or events that have inspired you most? Anytime you or anyone else conquers an important challenge in their life it can become inspiring to experience. You are generally inspired most frequently in the area of your life that means most to you.Another way to think about this is: who in your life, or history, has inspired you the most?."
+            description: "What qualities or values are shared by people is common to those individuals, insights, experiences or events that have inspired you most? Anytime you or anyone else conquers an important challenge in their life it can become inspiring to experience. You are generally inspired most frequently in the area of your life that means most to you. Another way to think about this is: who in your life, or history, has inspired you the most?"
         ),
         QuestionType1(
             question: "6. What do you spend your time on primarily?",
