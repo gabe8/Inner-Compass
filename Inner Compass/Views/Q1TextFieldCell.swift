@@ -23,7 +23,8 @@ class Q1TextFieldCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        // Make the Q1TextFieldCell part of 
         answerTextField.delegate = self
         
         // If there is an existing answer in user defaults for this question/answer,
